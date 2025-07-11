@@ -1,0 +1,193 @@
+{
+  "documentCount": 8,
+  "nextId": 8,
+  "documentIds": {
+    "0": "/docs/guide/_write-MDX-articles",
+    "1": "/docs/blog/placeholder-blog",
+    "2": "/docs/blog/blog-3",
+    "3": "/docs/blog/blog-2",
+    "4": "write-tsx-articles",
+    "5": "Publication Title0",
+    "6": "Another Publication1",
+    "7": "Another Publication2"
+  },
+  "fieldIds": { "title": 0, "description": 1, "headings": 2, "tags": 3 },
+  "fieldLength": {
+    "0": [3, 7, 22],
+    "1": [2, 3, 1, 2],
+    "2": [2, 7, 1],
+    "3": [2, 7, 1],
+    "4": [3, 13, 5, 3],
+    "5": [2, 16, null, 1],
+    "6": [2, 17, null, 1],
+    "7": [2, 17, null, 1]
+  },
+  "averageFieldLength": [2.25, 10.875, 6, 1.25],
+  "storedFields": {
+    "0": {
+      "slug": "/docs/guide/_write-MDX-articles",
+      "title": "Write MDX Articles",
+      "section": "Guide /  Write MDX Articles",
+      "headings": [
+        "Header 1",
+        "Header 2",
+        "Header 3",
+        "Header 4",
+        "Header 5",
+        "Header 6",
+        "Blockquote Content",
+        "Inline Code Example",
+        "Code Example",
+        "List Example",
+        "Table Example",
+        "Link Example",
+        "Image Example",
+        "Divider Example",
+        "Use react component in mdx"
+      ],
+      "description": "Article description from frontmatter (hidden from sidebar)"
+    },
+    "1": {
+      "slug": "/docs/blog/placeholder-blog",
+      "title": "placeholder blog",
+      "section": "Blog / Placeholder Blog",
+      "tags": ["placeholder blog"],
+      "headings": ["introduction"],
+      "description": "placeholder blog description"
+    },
+    "2": {
+      "slug": "/docs/blog/blog-3",
+      "title": "Blog 2",
+      "section": "Blog / Blog 3",
+      "headings": [],
+      "description": "This is the second blog post."
+    },
+    "3": {
+      "slug": "/docs/blog/blog-2",
+      "title": "Blog 2",
+      "section": "Blog / Blog 2",
+      "headings": [],
+      "description": "This is the second blog post."
+    },
+    "4": {
+      "slug": "/docs/guide/_write-TSX-articles",
+      "title": "Write TSX Articles",
+      "section": "Guide / Write TSX Articles",
+      "tags": ["guide", "tsx", "documentation"],
+      "headings": ["TSX Component Example", "Interactive Features"],
+      "description": "This is an example of a TSX documentation page with interactive features."
+    },
+    "5": {
+      "slug": "/docs/research/publication-title",
+      "title": "Publication Title",
+      "section": "Research / Publication Title",
+      "tags": ["Conference"],
+      "description": "This is a brief abstract of the publication. It summarizes the key findings and contributions of the research."
+    },
+    "6": {
+      "slug": "/docs/research/another-publication",
+      "title": "Another Publication",
+      "section": "Research / Another Publication",
+      "tags": ["Journal"],
+      "description": "This publication explores a different aspect of software engineering, providing insights into new methodologies and practices."
+    },
+    "7": {
+      "slug": "/docs/research/another-publication",
+      "title": "Another Publication",
+      "section": "Research / Another Publication",
+      "tags": ["Journal"],
+      "description": "This publication explores a different aspect of software engineering, providing insights into new methodologies and practices."
+    }
+  },
+  "dirtCount": 0,
+  "index": [
+    ["journal", { "3": { "6": 1, "7": 1 } }],
+    ["methodologies", { "1": { "6": 1, "7": 1 } }],
+    ["mdx", { "0": { "0": 1 }, "2": { "0": 1 } }],
+    ["new", { "1": { "6": 1, "7": 1 } }],
+    ["engineering", { "1": { "6": 1, "7": 1 } }],
+    ["explores", { "1": { "6": 1, "7": 1 } }],
+    ["example", { "1": { "4": 1 }, "2": { "0": 7, "4": 1 } }],
+    ["research", { "1": { "5": 1 } }],
+    ["react", { "2": { "0": 1 } }],
+    ["key", { "1": { "5": 1 } }],
+    ["brief", { "1": { "5": 1 } }],
+    [
+      "blog",
+      {
+        "0": { "1": 1, "2": 1, "3": 1 },
+        "1": { "1": 1, "2": 1, "3": 1 },
+        "3": { "1": 1 }
+      }
+    ],
+    ["blockquote", { "2": { "0": 1 } }],
+    ["guide", { "3": { "4": 1 } }],
+    ["findings", { "1": { "5": 1 } }],
+    ["features", { "1": { "4": 1 }, "2": { "4": 1 } }],
+    ["frontmatter", { "1": { "0": 1 } }],
+    ["from", { "1": { "0": 2 } }],
+    ["with", { "1": { "4": 1 } }],
+    ["write", { "0": { "0": 1, "4": 1 } }],
+    ["of", { "1": { "4": 1, "5": 2, "6": 1, "7": 1 } }],
+    ["aspect", { "1": { "6": 1, "7": 1 } }],
+    ["abstract", { "1": { "5": 1 } }],
+    ["a", { "1": { "4": 1, "5": 1, "6": 1, "7": 1 } }],
+    ["another", { "0": { "6": 1, "7": 1 } }],
+    ["and", { "1": { "5": 1, "6": 1, "7": 1 } }],
+    ["an", { "1": { "4": 1 } }],
+    ["article", { "1": { "0": 1 } }],
+    ["articles", { "0": { "0": 1, "4": 1 } }],
+    ["practices", { "1": { "6": 1, "7": 1 } }],
+    ["providing", { "1": { "6": 1, "7": 1 } }],
+    [
+      "publication",
+      { "0": { "5": 1, "6": 1, "7": 1 }, "1": { "5": 1, "6": 1, "7": 1 } }
+    ],
+    ["page", { "1": { "4": 1 } }],
+    ["post", { "1": { "2": 1, "3": 1 } }],
+    ["placeholder", { "0": { "1": 1 }, "1": { "1": 1 }, "3": { "1": 1 } }],
+    ["software", { "1": { "6": 1, "7": 1 } }],
+    ["summarizes", { "1": { "5": 1 } }],
+    ["second", { "1": { "2": 1, "3": 1 } }],
+    ["sidebar", { "1": { "0": 1 } }],
+    ["title", { "0": { "5": 1 } }],
+    [
+      "tsx",
+      { "0": { "4": 1 }, "1": { "4": 1 }, "2": { "4": 1 }, "3": { "4": 1 } }
+    ],
+    ["the", { "1": { "2": 1, "3": 1, "5": 3 } }],
+    ["this", { "1": { "2": 1, "3": 1, "4": 1, "5": 1, "6": 1, "7": 1 } }],
+    ["table", { "2": { "0": 1 } }],
+    ["use", { "2": { "0": 1 } }],
+    ["different", { "1": { "6": 1, "7": 1 } }],
+    ["divider", { "2": { "0": 1 } }],
+    ["documentation", { "1": { "4": 1 }, "3": { "4": 1 } }],
+    ["description", { "1": { "0": 1, "1": 1 } }],
+    ["it", { "1": { "5": 1 } }],
+    ["is", { "1": { "2": 1, "3": 1, "4": 1, "5": 1 } }],
+    ["insights", { "1": { "6": 1, "7": 1 } }],
+    ["into", { "1": { "6": 1, "7": 1 } }],
+    ["interactive", { "1": { "4": 1 }, "2": { "4": 1 } }],
+    ["introduction", { "2": { "1": 1 } }],
+    ["in", { "2": { "0": 1 } }],
+    ["inline", { "2": { "0": 1 } }],
+    ["image", { "2": { "0": 1 } }],
+    ["link", { "2": { "0": 1 } }],
+    ["list", { "2": { "0": 1 } }],
+    ["conference", { "3": { "5": 1 } }],
+    ["contributions", { "1": { "5": 1 } }],
+    ["content", { "2": { "0": 1 } }],
+    ["component", { "2": { "0": 1, "4": 1 } }],
+    ["code", { "2": { "0": 2 } }],
+    ["6", { "2": { "0": 1 } }],
+    ["5", { "2": { "0": 1 } }],
+    ["4", { "2": { "0": 1 } }],
+    ["3", { "2": { "0": 1 } }],
+    ["2", { "0": { "2": 1, "3": 1 }, "2": { "0": 1 } }],
+    ["1", { "2": { "0": 1 } }],
+    ["header", { "2": { "0": 6 } }],
+    ["hidden", { "1": { "0": 1 } }]
+  ],
+  "serializationVersion": 2
+}
+
