@@ -1,12 +1,5 @@
 # CSE
 
-## TODO
-
-- [ ] need a logo
-- [ ] research?
-- [ ] news?
-- [ ] main landing page as home?
-
 ## How to run the website locally
 
 - make sure you have [Node.js](https://nodejs.org/en/download/) installed
