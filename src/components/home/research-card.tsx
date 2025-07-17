@@ -20,7 +20,10 @@ export function ResearchCard({
   className?: string;
 }) {
   return (
-    <Link to={`/docs/research/publication-index?title=${encodeURIComponent(pub.title)}`} className={cn('group w-full', className)}>
+    <Link
+      to={`/docs/research/publication-index?title=${encodeURIComponent(pub.title)}`}
+      className={cn('group w-full', className)}
+    >
       <Card
         className={cn(
           'h-full w-full py-2 transition-all duration-300 hover:border-foreground dark:hover:border-active',
@@ -31,7 +34,13 @@ export function ResearchCard({
             <div className="flex-1">
               <div className="mb-2 flex items-center gap-3">
                 <Badge
-                  variant={pub.type === 'Journal' ? 'default' : 'secondary'}
+                  variant={
+                    pub.type === 'Journal'
+                      ? 'default'
+                      : pub.type === 'Conference'
+                        ? 'secondary'
+                        : 'outline'
+                  }
                   className="dark:group-hover:border-active/50 dark:group-hover:bg-active/10 dark:group-hover:text-active"
                 >
                   {pub.type}
