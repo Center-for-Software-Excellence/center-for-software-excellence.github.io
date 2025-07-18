@@ -34,14 +34,17 @@ export function ResearchCard({
             <div className="flex-1">
               <div className="mb-2 flex items-center gap-3">
                 <Badge
-                  variant={
-                    pub.type === 'Journal'
-                      ? 'default'
-                      : pub.type === 'Conference'
-                        ? 'secondary'
-                        : 'outline'
-                  }
-                  className="dark:group-hover:border-active/50 dark:group-hover:bg-active/10 dark:group-hover:text-active"
+                  className={cn(
+                    'border-border group-hover:border-foreground dark:group-hover:border-active/50 dark:group-hover:bg-active/10 dark:group-hover:text-active',
+                    {
+                      'bg-muted text-muted-foreground': pub.type === 'Preprint',
+                      'bg-primary text-primary-foreground':
+                        pub.type === 'Journal',
+                      'bg-secondary text-secondary-foreground':
+                        pub.type === 'Conference',
+                      'bg-accent text-accent-foreground': pub.type === 'Other',
+                    },
+                  )}
                 >
                   {pub.type}
                 </Badge>

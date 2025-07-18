@@ -1,9 +1,16 @@
+import { Suspense } from 'react';
+
+import { ResearchPageSkeleton } from '@/components/common/skeleton';
 import { ResearchList } from '@/components/docs/article-list';
 import { FrontmatterForTSX } from '@/components/md/frontmatter';
-import { getHomeConfig } from '@/config/home';
+import { usePublications } from '@/hooks/use-publications';
+
+function ResearchContent() {
+  const publications = usePublications();
+  return <ResearchList itemsPerPage={5} content={publications} />;
+}
 
 export default function ResearchPage() {
-  const { publications } = getHomeConfig();
   return (
     <div className="mx-auto px-4 py-8">
       <FrontmatterForTSX
@@ -12,7 +19,9 @@ export default function ResearchPage() {
         }}
       />
       <div className="mt-8">
-        <ResearchList itemsPerPage={5} content={publications} />
+        <Suspense fallback={<ResearchPageSkeleton />}>
+          <ResearchContent />
+        </Suspense>
       </div>
     </div>
   );

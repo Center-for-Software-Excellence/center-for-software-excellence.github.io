@@ -4,12 +4,14 @@ import { Link, useSearchParams } from 'react-router';
 
 import { Badge } from '@/components/common/badge';
 import { Button } from '@/components/common/ui/button';
-import { getHomeConfig, type Publication } from '@/config/home';
+import { Publication } from '@/config/home';
+import { usePublications } from '@/hooks/use-publications';
 
 export default function PublicationIndex() {
   const [searchParams] = useSearchParams();
   const [publication, setPublication] = useState<Publication | null>(null);
   const [loading, setLoading] = useState(true);
+  const publications = usePublications();
 
   useEffect(() => {
     const title = searchParams.get('title');
@@ -18,14 +20,11 @@ export default function PublicationIndex() {
       return;
     }
 
-    const config = getHomeConfig();
-    const foundPublication = config.publications.find(
-      (pub) => pub.title === title,
-    );
+    const foundPublication = publications.find((pub) => pub.title === title);
 
     setPublication(foundPublication || null);
     setLoading(false);
-  }, [searchParams]);
+  }, [searchParams, publications]);
 
   if (loading) {
     return (
@@ -86,4 +85,3 @@ export default function PublicationIndex() {
     </div>
   );
 }
-

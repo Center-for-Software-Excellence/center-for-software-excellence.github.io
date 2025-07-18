@@ -1,7 +1,6 @@
-import { getHomeConfig } from '../home';
+import publications from '../../../public/data/publications.json';
 
 export const researchRecords = () => {
-  const { publications } = getHomeConfig();
   const records = publications.map((pub, idx) => {
     return {
       id: pub.title + idx,
