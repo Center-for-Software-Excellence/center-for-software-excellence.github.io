@@ -1,0 +1,718 @@
+[
+  {
+    "title": "SPICE: An Automated SWE-Bench Labeling Pipeline for Issue Clarity, Test Coverage, and Effort Estimation",
+    "abstract": "We introduce SPICE, a scalable, automated pipeline for labeling SWE-bench-style datasets with annotations for issue clarity, test coverage, and effort estimation. SPICE combines context-aware code navigation, rationale-driven prompting, and multi-pass consensus to produce labels that closely approximate expert annotations. Our evaluation shows that SPICE achieves high inter-annotator agreement and can be used to improve the quality of software engineering datasets.",
+    "date": "Jul 12, 2025",
+    "authors": [
+      "Dayi Lin",
+      "Ahmed E Hassan",
+      "Gopi Krishnan Rajbahadur"
+    ],
+    "type": "Preprint",
+    "link": "/docs/research/spice-an-automated-swe-bench-labeling-pipeline-for-issue-clarity-test-coverage-and-effort-estimation",
+    "paperLink": "https://arxiv.org/abs/2507.09108"
+  },
+  {
+    "title": "Context-Aware CodeLLM Eviction for AI-assisted Coding",
+    "abstract": "We present a context-aware eviction strategy for CodeLLMs in AI-assisted coding environments. Our approach considers the contextual relevance and usage patterns of code completions to optimize memory utilization and response time. The method demonstrates improved performance in resource-constrained environments while maintaining code suggestion quality.",
+    "date": "Jun 30, 2025",
+    "authors": [
+      "Kishanthan Thangarajah",
+      "Boyuan Chen",
+      "Shengjie Chang",
+      "Ahmed E Hassan"
+    ],
+    "type": "Preprint",
+    "link": "/docs/research/context-aware-codellm-eviction-for-ai-assisted-coding",
+    "paperLink": "https://arxiv.org/abs/2506.18796"
+  },
+  {
+    "title": "Adaptive Request Scheduling for CodeLLM Serving with SLA Guarantees",
+    "abstract": "We present an adaptive request scheduling system for serving Code Large Language Models (CodeLLMs) with Service Level Agreement (SLA) guarantees. Our approach dynamically adjusts scheduling policies based on request characteristics and system load to optimize both throughput and latency while maintaining SLA compliance. Experimental results show significant improvements in serving efficiency compared to static scheduling approaches.",
+    "date": "Jun 24, 2025",
+    "authors": [
+      "Shengjie Chang",
+      "Boyuan Chen",
+      "Kishanthan Thangarajah",
+      "Hanan Lutfiyya",
+      "Ahmed E Hassan"
+    ],
+    "type": "Preprint",
+    "link": "/docs/research/adaptive-request-scheduling-for-codellm-serving-with-sla-guarantees",
+    "paperLink": "https://arxiv.org/abs/2506.19677"
+  },
+  {
+    "title": "Towards Conversational Development Environments: Using Theory-of-Mind and Multi-Agent Architectures for Requirements Refinement",
+    "abstract": "Foundation Models (FMs) have shown remarkable capabilities in various natural language tasks. However, their ability to accurately capture stakeholder requirements remains a significant challenge for using FMs for software development. This paper introduces a novel approach that leverages an FM-powered multi-agent system called AlignMind to address this issue. By having a cognitive architecture that enhances FMs with Theory-of-Mind capabilities, our approach considers the mental states and perspectives of software makers. This allows our solution to iteratively clarify the beliefs, desires, and intentions of stakeholders, translating these into a set of refined requirements and a corresponding actionable natural language workflow in the often-overlooked requirements refinement phase of software engineering, which is crucial after initial elicitation.",
+    "date": "May 27, 2025",
+    "authors": [
+      "Keheliya Gallaba",
+      "Ali Arabat",
+      "Dayi Lin",
+      "Mohammed Sayagh",
+      "Ahmed E Hassan"
+    ],
+    "type": "Preprint",
+    "link": "/docs/research/towards-conversational-development-environments-using-theoryofmind-and-multiagent-architectures-for-requirements-refinement",
+    "paperLink": "https://arxiv.org/pdf/2505.20973"
+  },
+  {
+    "title": "Model Performance-Guided Evaluation Data Selection for Effective Prompt Optimization",
+    "abstract": "Optimizing Large Language Model (LLM) performance requires well-crafted prompts, but manual prompt engineering is labor-intensive and often ineffective. Automated prompt optimization techniques address this challenge but the majority of them rely on randomly selected evaluation subsets, which fail to represent the full dataset, leading to unreliable evaluations and suboptimal prompts. Existing coreset selection methods, designed for LLM benchmarking, are unsuitable for prompt optimization due to challenges in clustering similar samples, high data collection costs, and the unavailability of performance data for new or private datasets.",
+    "date": "May 15, 2025",
+    "authors": [
+      "Ximing Dong",
+      "Shaowei Wang",
+      "Dayi Lin",
+      "Ahmed E Hassan"
+    ],
+    "type": "Preprint",
+    "link": "/docs/research/model-performance-guided-evaluation-data-selection-for-effective-prompt-optimization",
+    "paperLink": "https://arxiv.org/abs/2505.10736"
+  },
+  {
+    "title": "The Hitchhikers Guide to Production-ready Trustworthy Foundation Model powered Software (FMware)",
+    "abstract": "Foundation Models (FMs) such as Large Language Models (LLMs) are reshaping the software industry by enabling FMware, systems that integrate these FMs as core components. In this KDD 2025 tutorial, we present a comprehensive exploration of FMware that combines a curated catalogue of challenges with real-world production concerns. We first discuss the state of research and practice in building FMware. We further examine the difficulties in selecting suitable models, aligning high-quality domain-specific data, engineering robust prompts, and orchestrating autonomous agents.",
+    "date": "May 15, 2025",
+    "authors": [
+      "Kirill Vasilevski",
+      "Benjamin Rombaut",
+      "Gopi Krishnan Rajbahadur",
+      "Gustavo A Oliva",
+      "Keheliya Gallaba",
+      "Filipe R Cogo",
+      "Jiahuei Lin",
+      "Dayi Lin",
+      "Haoxiang Zhang",
+      "Boyuan Chen",
+      "Kishanthan Thangarajah",
+      "Ahmed E Hassan",
+      "Zhen Ming Jiang"
+    ],
+    "type": "Conference",
+    "link": "/docs/research/the-hitchhikers-guide-to-productionready-trustworthy-foundation-model-powered-software-fmware",
+    "paperLink": "https://arxiv.org/pdf/2505.10640"
+  },
+  {
+    "title": "SLA-Awareness for AI-assisted coding",
+    "abstract": "We introduce SLA-aware mechanisms for AI-assisted coding systems that ensure service level agreement compliance while providing code suggestions. Our approach balances code quality, response time, and system reliability to meet specified SLA requirements. The system demonstrates consistent performance across various coding scenarios and workloads.",
+    "date": "Mar 30, 2025",
+    "authors": [
+      "Kishanthan Thangarajah",
+      "Alex Leung",
+      "Boyuan Chen",
+      "Ahmed E Hassan"
+    ],
+    "type": "Preprint",
+    "link": "/docs/research/sla-awareness-for-ai-assisted-coding",
+    "paperLink": "https://arxiv.org/abs/2503.19876"
+  },
+  {
+    "title": "MetaSel: A Test Selection Approach for Fine-tuned DNN Models",
+    "abstract": "Deep Neural Networks (DNNs) face challenges during deployment due to data distribution shifts. Fine-tuning adapts pre-trained models to new contexts requiring smaller labeled sets. However, testing fine-tuned models under constrained labeling budgets remains a critical challenge. This paper introduces MetaSel, a new approach, tailored for fine-tuned DNN models, to select tests from unlabeled inputs. MetaSel assumes that fine-tuned and pre-trained models share related data distributions and exhibit similar behaviors for many inputs.",
+    "date": "Mar 21, 2025",
+    "authors": [
+      "Amin Abbasishahkoo",
+      "Mahboubeh Dadkhah",
+      "Lionel Briand",
+      "Dayi Lin"
+    ],
+    "type": "Preprint",
+    "link": "/docs/research/metasel-a-test-selection-approach-for-finetuned-dnn-models",
+    "paperLink": "https://arxiv.org/pdf/2503.17534"
+  },
+  {
+    "title": "PhysGen3D: Crafting a Miniature Interactive World from a Single Image",
+    "abstract": "We present PhysGen3D, a novel approach for generating interactive 3D scenes from a single image. Our method combines physics simulation with 3D generation to create miniature interactive worlds that obey physical laws. Users can interact with the generated scene through physics-based manipulation, making it suitable for applications in robotics simulation, education, and interactive entertainment.",
+    "date": "Mar 15, 2025",
+    "authors": [
+      "Boyuan Chen",
+      "Hao Jiang",
+      "Shuran Liu",
+      "Saurabh Gupta",
+      "Yuke Li"
+    ],
+    "type": "Conference",
+    "link": "/docs/research/physgen3d-crafting-a-miniature-interactive-world-from-a-single-image",
+    "paperLink": "https://openaccess.thecvf.com/content/CVPR2025/html/Chen_PhysGen3D_Crafting_a_Miniature_Interactive_World_from_a_Single_Image_CVPR_2025_paper.html"
+  },
+  {
+    "title": "History-guided Video Diffusion",
+    "abstract": "We introduce a novel approach for video generation using diffusion models that leverages historical frames to guide the generation process. Our method maintains temporal consistency by conditioning on past frames while generating new content, resulting in more coherent and realistic video sequences. The approach demonstrates significant improvements in video quality and temporal coherence across various benchmarks.",
+    "date": "Feb 12, 2025",
+    "authors": [
+      "Kevin Song",
+      "Boyuan Chen",
+      "Max Simchowitz",
+      "Yilun Du"
+    ],
+    "type": "Preprint",
+    "link": "/docs/research/history-guided-video-diffusion",
+    "paperLink": "https://arxiv.org/abs/2502.06764"
+  },
+  {
+    "title": "Simclone: detecting tabular data clones using value similarity",
+    "abstract": "Data clones are defined as multiple copies of the same data among datasets. The presence of data clones between datasets can cause issues such as difficulties in managing data assets and data license violations when using datasets with clones to build AI software. However, detecting data clones is not trivial. The majority of the prior studies in this area rely on structural information to detect data clones (e.g., font size, column header). However, tabular datasets used to build AI software are typically stored without any structural information.",
+    "date": "Jan 21, 2025",
+    "authors": [
+      "Xu Yang",
+      "Gopi Krishnan Rajbahadur",
+      "Dayi Lin",
+      "Shaowei Wang",
+      "Zhen Ming Jiang"
+    ],
+    "type": "Journal",
+    "link": "/docs/research/simclone-detecting-tabular-data-clones-using-value-similarity",
+    "paperLink": "https://arxiv.org/pdf/2407.12802"
+  },
+  {
+    "title": "Controlling Diverse Robots by Inferring Jacobian Fields with Deep Networks",
+    "abstract": "We present a unified approach for controlling diverse robotic systems by learning to infer Jacobian fields using deep neural networks. Our method enables a single learned model to control robots with different morphologies and degrees of freedom without requiring robot-specific training. The approach demonstrates generalization across various robotic platforms and tasks.",
+    "date": "Jan 8, 2025",
+    "authors": [
+      "Shaohui Liu Li",
+      "Alex Zhang",
+      "Boyuan Chen",
+      "Hod Matusik",
+      "Cathy Liu",
+      "Daniela Rus"
+    ],
+    "type": "Journal",
+    "link": "/docs/research/controlling-diverse-robots-by-inferring-jacobian-fields-with-deep-networks",
+    "paperLink": "https://www.nature.com/articles/s41586-025-09170-0"
+  },
+  {
+    "title": "Diffusion Forcing: Next-token Prediction Meets Full-sequence Diffusion",
+    "abstract": "We introduce Diffusion Forcing, a novel training paradigm that combines the efficiency of next-token prediction with the quality benefits of full-sequence diffusion. Our approach enables models to generate high-quality sequences while maintaining the computational efficiency of autoregressive generation. The method demonstrates significant improvements in sequence generation quality across various domains.",
+    "date": "Dec 10, 2024",
+    "authors": [
+      "Boyuan Chen",
+      "Diego Martí Monsó",
+      "Yilun Du"
+    ],
+    "type": "Conference",
+    "link": "/docs/research/diffusion-forcing-next-token-prediction-meets-full-sequence-diffusion",
+    "paperLink": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/2aee1c4159e48407d68fe16ae8e6e49e-Abstract-Conference.html"
+  },
+  {
+    "title": "Engineering AI Judge Systems",
+    "abstract": "AI judge systems are designed to automatically evaluate Foundation Model-powered software (i.e., FMware). Due to the intrinsic dynamic and stochastic nature of FMware, the development of AI judge systems requires a unique engineering life cycle and presents new challenges. In this paper, we discuss the challenges based on our industrial experiences in developing AI judge systems for FMware. These challenges lead to substantial time consumption, cost and inaccurate judgments.",
+    "date": "Nov 26, 2024",
+    "authors": [
+      "Jiahuei Lin",
+      "Dayi Lin",
+      "Sky Zhang",
+      "Ahmed E Hassan"
+    ],
+    "type": "Preprint",
+    "link": "/docs/research/engineering-ai-judge-systems",
+    "paperLink": "https://arxiv.org/pdf/2411.17793"
+  },
+  {
+    "title": "Real-time Adapting Routing (RAR): Improving Efficiency Through Continuous Learning in Software Powered by Layered Foundation Models",
+    "abstract": "To balance the quality and inference cost of a Foundation Model (FM, such as large language models (LLMs)) powered software, people often opt to train a routing model that routes requests to FMs with different sizes and capabilities. Existing routing models rely on learning the optimal routing decision from carefully curated data, require complex computations to be updated, and do not consider the potential evolution of weaker FMs.",
+    "date": "Nov 14, 2024",
+    "authors": [
+      "Kirill Vasilevski",
+      "Dayi Lin",
+      "Ahmed E Hassan"
+    ],
+    "type": "Preprint",
+    "link": "/docs/research/realtime-adapting-routing-rar-improving-efficiency-through-continuous-learning-in-software-powered-by-layered-foundation-models",
+    "paperLink": "https://arxiv.org/pdf/2411.09837"
+  },
+  {
+    "title": "Software Performance Engineering for Foundation Model-Powered Software (FMware)",
+    "abstract": "We present a comprehensive approach to software performance engineering specifically designed for Foundation Model-powered software (FMware). Our methodology addresses the unique performance challenges posed by integrating foundation models into software systems, including latency optimization, resource management, and scalability considerations. The framework provides practical guidelines for developing high-performance FMware applications.",
+    "date": "Nov 14, 2024",
+    "authors": [
+      "Haoxiang Zhang",
+      "Shengjie Chang",
+      "Alex Leung",
+      "Kishanthan Thangarajah",
+      "Boyuan Chen",
+      "Hanan Lutfiyya"
+    ],
+    "type": "Preprint",
+    "link": "/docs/research/software-performance-engineering-for-foundation-model-powered-software-fmware",
+    "paperLink": "https://arxiv.org/abs/2411.09580"
+  },
+  {
+    "title": "Watson: A Cognitive Observability Framework for the Reasoning of LLM-Powered Agents",
+    "abstract": "As foundation models (FMs) play an increasingly prominent role in complex software systems, such as agentic software, they introduce significant observability and debuggability challenges. Although recent Large Reasoning Models (LRMs) generate their thought processes as part of the output, in many scenarios fast-thinking Large Language Models (LLMs) are still preferred due to latency constraints. LLM-powered agents operate autonomously with opaque implicit reasoning, making it difficult to debug their unexpected behaviors or errors.",
+    "date": "Nov 5, 2024",
+    "authors": [
+      "Benjamin Rombaut",
+      "Sogol Masoumzadeh",
+      "Kirill Vasilevski",
+      "Dayi Lin",
+      "Ahmed E Hassan"
+    ],
+    "type": "Preprint",
+    "link": "/docs/research/watson-a-cognitive-observability-framework-for-the-reasoning-of-llmpowered-agents",
+    "paperLink": "https://arxiv.org/pdf/2411.03455"
+  },
+  {
+    "title": "From Cool Demos to Production-Ready FMware: Core Challenges and a Technology Roadmap",
+    "abstract": "The rapid expansion of foundation models (FMs), such as large language models (LLMs), has given rise to FMware--software systems that integrate FMs as core components. While building demonstration-level FMware is relatively straightforward, transitioning to production-ready systems presents numerous challenges, including reliability, high implementation costs, scalability, and compliance with privacy regulations.",
+    "date": "Oct 28, 2024",
+    "authors": [
+      "Gopi Krishnan Rajbahadur",
+      "Gustavo A Oliva",
+      "Dayi Lin",
+      "Ahmed E Hassan"
+    ],
+    "type": "Preprint",
+    "link": "/docs/research/from-cool-demos-to-productionready-fmware-core-challenges-and-a-technology-roadmap",
+    "paperLink": "https://arxiv.org/pdf/2410.20791"
+  },
+  {
+    "title": "Teasma: A practical methodology for test adequacy assessment of deep neural networks",
+    "abstract": "Successful deployment of Deep Neural Networks (DNNs), particularly in safety-critical systems, requires their validation with an adequate test set to ensure a sufficient degree of confidence in test outcomes. Although well-established test adequacy assessment techniques from traditional software, such as mutation analysis and coverage criteria, have been adapted to DNNs in recent years, we still need to investigate their application within a comprehensive methodology for accurately predicting the fault detection ability of test sets and thus assessing their adequacy.",
+    "date": "Oct 17, 2024",
+    "authors": [
+      "Amin Abbasishahkoo",
+      "Mahboubeh Dadkhah",
+      "Lionel Briand",
+      "Dayi Lin"
+    ],
+    "type": "Journal",
+    "link": "/docs/research/teasma-a-practical-methodology-for-test-adequacy-assessment-of-deep-neural-networks",
+    "paperLink": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10720834"
+  },
+  {
+    "title": "Promptexp: Multi-granularity prompt explanation of large language models",
+    "abstract": "Large Language Models excel in tasks like natural language understanding and text generation. Prompt engineering plays a critical role in leveraging LLM effectively. However, LLMs black-box nature hinders its interpretability and effective prompting engineering. A wide range of model explanation approaches have been developed for deep learning models, However, these local explanations are designed for single-output tasks like classification and regression,and cannot be directly applied to LLMs, which generate sequences of tokens.",
+    "date": "Oct 16, 2024",
+    "authors": [
+      "Ximing Dong",
+      "Shaowei Wang",
+      "Dayi Lin",
+      "Gopi Krishnan Rajbahadur",
+      "Boquan Zhou",
+      "Shichao Liu",
+      "Ahmed E Hassan"
+    ],
+    "type": "Preprint",
+    "link": "/docs/research/promptexp-multigranularity-prompt-explanation-of-large-language-models",
+    "paperLink": "https://arxiv.org/pdf/2410.13073"
+  },
+  {
+    "title": "Towards AI-Native Software Engineering (SE 3.0): A Vision and a Challenge Roadmap",
+    "abstract": "The rise of AI-assisted software engineering (SE 2.0), powered by Foundation Models (FMs) and FM-powered copilots, has shown promise in improving developer productivity. However, it has also exposed inherent limitations, such as cognitive overload on developers and inefficiencies. We propose a shift towards Software Engineering 3.0 (SE 3.0), an AI-native approach characterized by intent-first, conversation-oriented development between human developers and AI teammates.",
+    "date": "Oct 8, 2024",
+    "authors": [
+      "Ahmed E Hassan",
+      "Gustavo A Oliva",
+      "Dayi Lin",
+      "Boyuan Chen",
+      "Zhen Ming Jiang"
+    ],
+    "type": "Preprint",
+    "link": "/docs/research/towards-ainative-software-engineering-se-30-a-vision-and-a-challenge-roadmap",
+    "paperLink": "https://arxiv.org/pdf/2410.06107"
+  },
+  {
+    "title": "Data quality antipatterns for software analytics",
+    "abstract": "Background: Data quality is vital in software analytics, particularly for machine learning (ML) applications like software defect prediction (SDP). Despite the widespread use of ML in software engineering, the effect of data quality antipatterns on these models remains underexplored. Objective: This study develops a taxonomy of ML-specific data quality antipatterns and assesses their impact on software analytics models' performance and interpretation.",
+    "date": "Aug 22, 2024",
+    "authors": [
+      "Aaditya Bhatia",
+      "Dayi Lin",
+      "Gopi Krishnan Rajbahadur",
+      "Bram Adams",
+      "Ahmed E Hassan"
+    ],
+    "type": "Preprint",
+    "link": "/docs/research/data-quality-antipatterns-for-software-analytics",
+    "paperLink": "https://arxiv.org/pdf/2408.12560"
+  },
+  {
+    "title": "A Tutorial on Software Engineering for FMware",
+    "abstract": "Foundation Models (FMs) like GPT-4 have given rise to FMware, FM-powered applications representing a new generation of software that is developed with new roles, assets, and paradigms. FMware has been widely adopted in both software engineering (SE) research (e.g., test generation) and industrial products (e.g., GitHub copilot), despite the numerous challenges introduced by the stochastic nature of FMs.",
+    "date": "Jul 10, 2024",
+    "authors": [
+      "Filipe Roseiro Cogo",
+      "Gopi Krishnan Rajbahadur",
+      "Dayi Lin",
+      "Ahmed E Hassan"
+    ],
+    "type": "Conference",
+    "link": "/docs/research/a-tutorial-on-software-engineering-for-fmware",
+    "paperLink": "https://dl.acm.org/doi/pdf/10.1145/3663529.3663820"
+  },
+  {
+    "title": "Rethinking software engineering in the era of foundation models: A curated catalogue of challenges in the development of trustworthy fmware",
+    "abstract": "Foundation models (FMs), such as Large Language Models (LLMs), have revolutionized software development by enabling new use cases and business models. We refer to software built using FMs as FMware. The unique properties of FMware (e.g., prompts, agents and the need for orchestration), coupled with the intrinsic limitations of FMs (e.g., hallucination) lead to a completely new set of software engineering challenges.",
+    "date": "Jul 10, 2024",
+    "authors": [
+      "Ahmed E Hassan",
+      "Dayi Lin",
+      "Gopi Krishnan Rajbahadur",
+      "Keheliya Gallaba",
+      "Filipe Roseiro Cogo",
+      "Boyuan Chen",
+      "Haoxiang Zhang",
+      "Kishanthan Thangarajah",
+      "Gustavo Oliva",
+      "Jiahuei Lin",
+      "Wali Mohammad Abdullah",
+      "Zhen Ming Jiang"
+    ],
+    "type": "Conference",
+    "link": "/docs/research/rethinking-software-engineering-in-the-era-of-foundation-models-a-curated-catalogue-of-challenges-in-the-development-of-trustworthy-fmware",
+    "paperLink": "https://dl.acm.org/doi/pdf/10.1145/3663529.3663849"
+  },
+  {
+    "title": "SpatialVLM: Endowing Vision-Language Models with Spatial Reasoning Capabilities",
+    "abstract": "We introduce SpatialVLM, a vision-language model specifically designed to understand and reason about spatial relationships in images. Our approach combines visual perception with spatial reasoning capabilities, enabling the model to answer complex questions about object locations, spatial arrangements, and geometric relationships. SpatialVLM demonstrates significant improvements on spatial reasoning benchmarks compared to existing vision-language models.",
+    "date": "Jun 15, 2024",
+    "authors": [
+      "Boyuan Chen",
+      "Zhuo Xu",
+      "Sergey Kirmani",
+      "Brian Ichter"
+    ],
+    "type": "Conference",
+    "link": "/docs/research/spatialvlm-endowing-vision-language-models-with-spatial-reasoning-capabilities",
+    "paperLink": "http://openaccess.thecvf.com/content/CVPR2024/html/Chen_SpatialVLM_Endowing_Vision-Language_Models_with_Spatial_Reasoning_Capabilities_CVPR_2024_paper.html"
+  },
+  {
+    "title": "Reasoning or Reciting? Exploring the Capabilities and Limitations of Language Models through Counterfactual Tasks",
+    "abstract": "We investigate whether large language models truly reason or merely recite memorized patterns by designing counterfactual tasks that require genuine reasoning capabilities. Our analysis reveals important limitations in current models' reasoning abilities and provides insights into when models rely on memorization versus genuine reasoning. The findings have implications for developing more robust and interpretable language models.",
+    "date": "May 20, 2024",
+    "authors": [
+      "Zhaofeng Wu",
+      "Linlu Qiu",
+      "Alexis Ross",
+      "Ekin Akyürek",
+      "Boyuan Chen",
+      "Bailin Wang"
+    ],
+    "type": "Conference",
+    "link": "/docs/research/reasoning-or-reciting-exploring-the-capabilities-and-limitations-of-language-models-through-counterfactual-tasks",
+    "paperLink": "https://open.bu.edu/bitstreams/8faf03b2-0aa7-4d11-96a9-5c59f92235b7/download"
+  },
+  {
+    "title": "Keeping deep learning models in check: A history-based approach to mitigate overfitting",
+    "abstract": "In software engineering, deep learning models are increasingly deployed for critical tasks such as bug detection and code review. However, overfitting remains a challenge that affects the quality, reliability, and trustworthiness of software systems that utilize deep learning models. Overfitting can be (1) prevented (e.g., using dropout or early stopping) or (2) detected in a trained model (e.g., using correlation-based approaches).",
+    "date": "May 17, 2024",
+    "authors": [
+      "Hao Li",
+      "Gopi Krishnan Rajbahadur",
+      "Dayi Lin",
+      "Cor-Paul Bezemer",
+      "Zhen Ming Jiang"
+    ],
+    "type": "Conference",
+    "link": "/docs/research/keeping-deep-learning-models-in-check-a-historybased-approach-to-mitigate-overfitting",
+    "paperLink": "https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10533733"
+  },
+  {
+    "title": "A Framework for Real-time Safeguarding the Text Generation of Large Language Model",
+    "abstract": "Large Language Models (LLMs) have significantly advanced natural language processing (NLP) tasks but also pose ethical and societal risks due to their propensity to generate harmful content. Existing methods have limitations, including the need for training specific control models and proactive intervention during text generation, that lead to quality degradation and increased computational overhead.",
+    "date": "Apr 29, 2024",
+    "authors": [
+      "Ximing Dong",
+      "Dayi Lin",
+      "Shaowei Wang",
+      "Ahmed E Hassan"
+    ],
+    "type": "Preprint",
+    "link": "/docs/research/a-framework-for-realtime-safeguarding-the-text-generation-of-large-language-model",
+    "paperLink": "https://arxiv.org/pdf/2404.19048"
+  },
+  {
+    "title": "Rethinking Software Engineering in the Foundation Model Era: From Task-Driven AI Copilots to Goal-Driven AI Pair Programmers",
+    "abstract": "The advent of Foundation Models (FMs) and AI-powered copilots has transformed the landscape of software development, offering unprecedented code completion capabilities and enhancing developer productivity. However, the current task-driven nature of these copilots falls short in addressing the broader goals and complexities inherent in software engineering (SE). In this paper, we propose a paradigm shift towards goal-driven AI-powered pair programmers that collaborate with human developers in a more holistic and context-aware manner.",
+    "date": "Apr 16, 2024",
+    "authors": [
+      "Ahmed E Hassan",
+      "Gustavo A Oliva",
+      "Dayi Lin",
+      "Boyuan Chen",
+      "Zhen Ming Jiang"
+    ],
+    "type": "Preprint",
+    "link": "/docs/research/rethinking-software-engineering-in-the-foundation-model-era-from-taskdriven-ai-copilots-to-goaldriven-ai-pair-programmers",
+    "paperLink": "https://arxiv.org/pdf/2404.10225"
+  },
+  {
+    "title": "Technical Brief on Software Engineering for FMware",
+    "abstract": "Foundation Models (FM) like GPT-4 have given rise to FMware, FM-powered applications, which represent a new generation of software that is developed with new roles, assets, and paradigms. FMware has been widely adopted in both software engineering (SE) research (e.g., test generation) and industrial products (e.g., GitHub copilot), despite the numerous challenges introduced by the stochastic nature of FMs.",
+    "date": "Apr 14, 2024",
+    "authors": [
+      "Dayi Lin",
+      "Filipe Roseiro Cogo",
+      "Gopi Krishnan Rajbahadur",
+      "Ahmed E Hassan"
+    ],
+    "type": "Conference",
+    "link": "/docs/research/technical-brief-on-software-engineering-for-fmware",
+    "paperLink": "https://dl.acm.org/doi/pdf/10.1145/3639478.3643062"
+  },
+  {
+    "title": "Human-Robot Facial Coexpression",
+    "abstract": "We present a novel approach for enabling robots to express emotions through facial expressions that mirror human emotional states. Our system uses real-time emotion recognition to detect human emotions and generates corresponding facial expressions on a robotic face. The approach enables more natural and empathetic human-robot interactions through synchronized emotional expressions.",
+    "date": "Apr 10, 2024",
+    "authors": [
+      "Yang Hu",
+      "Boyuan Chen",
+      "Jiahui Lin",
+      "Yang Wang",
+      "Yue Wang",
+      "Claire Mehlman"
+    ],
+    "type": "Journal",
+    "link": "/docs/research/human-robot-facial-coexpression",
+    "paperLink": "https://www.science.org/doi/abs/10.1126/scirobotics.adi4724"
+  },
+  {
+    "title": "Aligner: Achieving Efficient Alignment through Weak-to-Strong Correction",
+    "abstract": "We introduce Aligner, a novel approach for achieving efficient alignment in large language models through weak-to-strong correction mechanisms. Our method leverages weaker models to guide the alignment of stronger models, reducing the computational cost and data requirements typically associated with alignment procedures. The approach demonstrates effectiveness across various alignment tasks while maintaining model performance.",
+    "date": "Mar 8, 2024",
+    "authors": [
+      "Jiaming Ji",
+      "Boyuan Chen",
+      "Hantao Lou",
+      "Donghai Hong",
+      "Borong Zhang",
+      "Xuehai Pan"
+    ],
+    "type": "Conference",
+    "link": "/docs/research/aligner-achieving-efficient-alignment-through-weak-to-strong-correction",
+    "paperLink": "https://openreview.net/forum?id=VoS7WQ8Rvm"
+  },
+  {
+    "title": "An Empirical Evaluation of LLMs for Solving Offensive Security Challenges",
+    "abstract": "We conduct a comprehensive empirical evaluation of large language models' capabilities in solving offensive security challenges. Our study examines various LLMs across different types of security tasks, including vulnerability discovery, exploit development, and penetration testing scenarios. The results provide insights into the current capabilities and limitations of LLMs in cybersecurity applications.",
+    "date": "Feb 20, 2024",
+    "authors": [
+      "Mark Shao",
+      "Boyuan Chen",
+      "Silvana Jancheska",
+      "Brendan Dolan-Gavitt"
+    ],
+    "type": "Preprint",
+    "link": "/docs/research/an-empirical-evaluation-of-llms-for-solving-offensive-security-challenges",
+    "paperLink": "https://arxiv.org/abs/2402.11814"
+  },
+  {
+    "title": "AI Alignment: A Comprehensive Survey",
+    "abstract": "We present a comprehensive survey of AI alignment research, covering the current state of the field, key challenges, and potential solutions. Our survey examines various approaches to aligning AI systems with human values and intentions, including reward modeling, constitutional AI, and interpretability techniques. The work provides a structured overview of the alignment landscape and identifies promising research directions.",
+    "date": "Oct 30, 2023",
+    "authors": [
+      "Jiaming Ji",
+      "Tianyi Qiu",
+      "Boyuan Chen",
+      "Borong Zhang",
+      "Hantao Lou",
+      "Kaile Wang"
+    ],
+    "type": "Preprint",
+    "link": "/docs/research/ai-alignment-a-comprehensive-survey",
+    "paperLink": "https://arxiv.org/abs/2310.19852"
+  },
+  {
+    "title": "An Empirical Comparison on the Results of Different Clone Detection Setups for C-based Projects",
+    "abstract": "Code clone detection is a fundamental technique in software engineering that helps identify similar code fragments within or across software projects. Various clone detection tools and configurations have been proposed, but their effectiveness can vary significantly depending on the setup and the characteristics of the target projects. This study presents an empirical comparison of different clone detection setups specifically for C-based projects.",
+    "date": "May 14, 2023",
+    "authors": [
+      "Yan Zhou",
+      "Jinfu Chen",
+      "Yong Shi",
+      "Boyuan Chen",
+      "Zhen Ming Jack Jiang"
+    ],
+    "type": "Conference",
+    "link": "/docs/research/an-empirical-comparison-on-the-results-of-different-clone-detection-setups-for-c-based-projects",
+    "paperLink": "https://dl.acm.org/doi/10.1145/3510458.3513025"
+  },
+  {
+    "title": "Understanding Why ViT Trains Badly on Small Datasets: An Intuitive Perspective",
+    "abstract": "We investigate why Vision Transformers (ViTs) struggle to achieve good performance when trained on small datasets. Through empirical analysis and theoretical insights, we identify key factors that contribute to this limitation and propose modifications to improve ViT performance on small-scale data. Our findings provide practical guidance for applying transformers in data-limited scenarios.",
+    "date": "Feb 7, 2023",
+    "authors": [
+      "Hao Zhu",
+      "Boyuan Chen",
+      "Cheng Yang"
+    ],
+    "type": "Preprint",
+    "link": "/docs/research/understanding-why-vit-trains-badly-on-small-datasets-an-intuitive-perspective",
+    "paperLink": "https://arxiv.org/abs/2302.03751"
+  },
+  {
+    "title": "Towards training reproducible deep learning models",
+    "abstract": "Reproducibility is an increasing concern in Artificial Intelligence (AI), particularly in the area of Deep Learning (DL). Being able to reproduce DL models is crucial for AI-based systems, as it is closely tied to various tasks like training, testing, debugging, and auditing. However, DL models are challenging to be reproduced due to issues like randomness in the software (e.g., DL algorithms) and non-determinism in the hardware (e.g., GPU).",
+    "date": "May 21, 2022",
+    "authors": [
+      "Boyuan Chen",
+      "Mingzhi Wen",
+      "Yong Shi",
+      "Dayi Lin",
+      "Gopi Krishnan Rajbahadur",
+      "Zhen Ming Jiang"
+    ],
+    "type": "Conference",
+    "link": "/docs/research/towards-training-reproducible-deep-learning-models",
+    "paperLink": "https://dl.acm.org/doi/pdf/10.1145/3510003.3510163"
+  },
+  {
+    "title": "Towards build verifiability for java-based systems",
+    "abstract": "We propose an approach for achieving build verifiability in Java-based software systems. Our method enables verification that compiled artifacts match their source code and build specifications, enhancing security and trust in software supply chains. The approach addresses challenges specific to Java ecosystems including dependency management and build tool integration.",
+    "date": "May 21, 2022",
+    "authors": [
+      "Jinfeng Xiong",
+      "Yong Shi",
+      "Boyuan Chen",
+      "Filipe Roseiro Cogo",
+      "Zhen Ming Jiang"
+    ],
+    "type": "Conference",
+    "link": "/docs/research/towards-build-verifiability-for-java-based-systems",
+    "paperLink": "https://dl.acm.org/doi/10.1145/3510003.3510184"
+  },
+  {
+    "title": "Systems, methods, and non-transitory computer-readable storage devices for detecting and analyzing data clones in tabular datasets",
+    "abstract": "A computerized method for detecting and analyzing data clones in one or more dataset pairs has the steps of: obtaining one or more similarity matrices and one or more sets of readout values of the one or more similarity matrices from the dataset pairs using a data-clone detection method, each set of readout values corresponding to a similarity matrix; obtaining one or more importance values for the one or more similarity matrices by processing the one or more sets of readout values using an interpretation method.",
+    "date": "May 9, 2022",
+    "authors": [
+      "Xu Yang",
+      "Gopi Krishnan RAJBAHADUR",
+      "Dayi Lin"
+    ],
+    "type": "Patent",
+    "link": "/docs/research/systems-methods-and-nontransitory-computerreadable-storage-devices-for-detecting-and-analyzing-data-clones-in-tabular-datasets",
+    "paperLink": "https://patentimages.storage.googleapis.com/22/01/b9/3637dd26320e1f/US20240152578A1.pdf"
+  },
+  {
+    "title": "Systems, methods, and non-transitory computer-readable storage devices for training deep learning and neural network models using overfitting detection and prevention",
+    "abstract": "Systems and methods for training deep learning and neural network models with automated overfitting detection and prevention capabilities. The approach uses training history analysis to identify optimal stopping points and prevent model degradation during the training process.",
+    "date": "May 9, 2022",
+    "authors": [
+      "Hao Li",
+      "Gopi Krishnan RAJBAHADUR",
+      "Dayi Lin",
+      "Zhenming Jiang"
+    ],
+    "type": "Patent",
+    "link": "/docs/research/systems-methods-and-nontransitory-computerreadable-storage-devices-for-training-deep-learning-and-neural-network-models-using-overfitting-detection-and-prevention",
+    "paperLink": "https://patentimages.storage.googleapis.com/b4/93/d7/8259f2f4d693d6/US20240152805A1.pdf"
+  },
+  {
+    "title": "Fully Body Visual Self-Modeling of Robot Morphologies",
+    "abstract": "We present a method for robots to learn visual models of their own morphology through self-observation. Our approach enables robots to build accurate visual representations of their body structure without prior knowledge of their physical configuration. The learned self-models can be used for improved manipulation, navigation, and self-diagnosis capabilities.",
+    "date": "Mar 18, 2022",
+    "authors": [
+      "Boyuan Chen",
+      "Robert Kwiatkowski",
+      "Carl Vondrick",
+      "Hod Lipson"
+    ],
+    "type": "Journal",
+    "link": "/docs/research/fully-body-visual-self-modeling-of-robot-morphologies",
+    "paperLink": "https://www.science.org/doi/abs/10.1126/scirobotics.abn1944"
+  },
+  {
+    "title": "Towards a consistent interpretation of AIOps models",
+    "abstract": "Artificial Intelligence for IT Operations (AIOps) has been adopted in organizations in various tasks, including interpreting models to identify indicators of service failures. To avoid misleading practitioners, AIOps model interpretations should be consistent (i.e., different AIOps models on the same task agree with one another on feature importance). However, many AIOps studies violate established practices in the machine learning community when deriving interpretations.",
+    "date": "Dec 1, 2021",
+    "authors": [
+      "Yingzhe Lyu",
+      "Gopi Krishnan Rajbahadur",
+      "Dayi Lin",
+      "Boyuan Chen",
+      "Zhen Ming Jack Jiang"
+    ],
+    "type": "Journal",
+    "link": "/docs/research/towards-a-consistent-interpretation-of-aiops-models",
+    "paperLink": "https://dl.acm.org/doi/pdf/10.1145/3488269"
+  },
+  {
+    "title": "Visual Behavior Modelling for Robotic Theory of Mind",
+    "abstract": "We introduce a computational approach for enabling robots to develop theory of mind capabilities through visual behavior modeling. Our method allows robots to predict and understand the mental states and intentions of other agents by observing their visual behaviors. The approach demonstrates applications in human-robot collaboration and social robotics scenarios.",
+    "date": "Nov 15, 2021",
+    "authors": [
+      "Boyuan Chen",
+      "Carl Vondrick",
+      "Hod Lipson"
+    ],
+    "type": "Journal",
+    "link": "/docs/research/visual-behavior-modelling-for-robotic-theory-of-mind",
+    "paperLink": "https://www.nature.com/articles/s41598-020-77918-x"
+  },
+  {
+    "title": "Can I use this publicly available dataset to build commercial AI software?--A Case Study on Publicly Available Image Datasets",
+    "abstract": "Publicly available datasets are one of the key drivers for commercial AI software. The use of publicly available datasets is governed by dataset licenses. These dataset licenses outline the rights one is entitled to on a given dataset and the obligations that one must fulfil to enjoy such rights without any license compliance violations. Unlike standardized Open Source Software (OSS) licenses, existing dataset licenses are defined in an ad-hoc manner and do not clearly outline the rights and obligations associated with their usage.",
+    "date": "Nov 3, 2021",
+    "authors": [
+      "Gopi Krishnan Rajbahadur",
+      "Erika Tuck",
+      "Li Zi",
+      "Dayi Lin",
+      "Boyuan Chen",
+      "Zhen Ming Jiang",
+      "Daniel M German"
+    ],
+    "type": "Preprint",
+    "link": "/docs/research/can-i-use-this-publicly-available-dataset-to-build-commercial-ai-softwarea-case-study-on-publicly-available-image-datasets",
+    "paperLink": "https://arxiv.org/pdf/2111.02374"
+  },
+  {
+    "title": "An experience report on producing verifiable builds for large-scale commercial systems",
+    "abstract": "We present an experience report on implementing verifiable builds for large-scale commercial software systems. Our report covers the challenges, solutions, and lessons learned from deploying verifiable build processes in industrial settings. The findings provide practical insights for organizations seeking to enhance their software supply chain security through build verification.",
+    "date": "Sep 15, 2021",
+    "authors": [
+      "Yong Shi",
+      "Mingzhi Wen",
+      "Filipe Roseiro Cogo",
+      "Boyuan Chen",
+      "Zhen Ming Jiang"
+    ],
+    "type": "Journal",
+    "link": "/docs/research/an-experience-report-on-producing-verifiable-builds-for-large-scale-commercial-systems",
+    "paperLink": "https://ieeexplore.ieee.org/document/9462847"
+  },
+  {
+    "title": "The Impact of Data Merging on the Interpretation of Cross-Project Just-In-Time Defect Models",
+    "abstract": "Just-In-Time (JIT) defect models are classification models that identify the code commits that are likely to introduce defects. Cross-project JIT models have been introduced to address the suboptimal performance of JIT models when historical data is limited. However, many studies built cross-project JIT models using a pool of mixed data from multiple projects (i.e., data merging)—assuming that the properties of defect-introducing commits of a project are similar to that of the other projects, which is likely not true.",
+    "date": "Apr 1, 2021",
+    "authors": [
+      "Dayi Lin",
+      "Chakkrit (Kla) Tantithamthavorn",
+      "Ahmed E Hassan"
+    ],
+    "type": "Journal",
+    "link": "/docs/research/the-impact-of-data-merging-on-the-interpretation-of-crossproject-justintime-defect-models",
+    "paperLink": "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9408228"
+  },
+  {
+    "title": "A survey of software log instrumentation",
+    "abstract": "We present a comprehensive survey of software log instrumentation practices, techniques, and tools. Our survey covers the evolution of logging frameworks, best practices for log instrumentation, and emerging trends in log analysis and management. The work provides guidance for developers and researchers on effective logging strategies for modern software systems.",
+    "date": "Apr 1, 2021",
+    "authors": [
+      "Boyuan Chen",
+      "Zhen Ming Jiang"
+    ],
+    "type": "Journal",
+    "link": "/docs/research/a-survey-of-software-log-instrumentation",
+    "paperLink": "https://dl.acm.org/doi/10.1145/3456634"
+  },
+  {
+    "title": "A Framework and Taxonomy for Characterizing the Applicability of Software Architecture Recovery Approaches: A Tertiary‐Mapping Study",
+    "abstract": "Software architecture assists developers in addressing non-functional requirements and in maintaining, debugging, and upgrading their software systems. Consequently, consistency between the designed architecture and the implemented software system itself is important; without this consistency the non-functional requirements targeted may not be addressed and architectural documentation may mis-direct maintenance efforts that target the associated code-base.",
+    "date": "Jan 1, 2021",
+    "authors": [
+      "Abdul Qayum",
+      "Mengqi Zhang",
+      "Simon Colreavy",
+      "Muslim Chochlov",
+      "Jim Buckley",
+      "Dayi Lin",
+      "Ashish Rajendra Sai"
+    ],
+    "type": "Journal",
+    "link": "/docs/research/a-framework-and-taxonomy-for-characterizing-the-applicability-of-software-architecture-recovery-approaches-a-tertiarymapping-study",
+    "paperLink": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/spe.3364"
+  }
+]
