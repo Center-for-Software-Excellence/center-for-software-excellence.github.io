@@ -1,0 +1,23 @@
+[
+  {
+    "title": "placeholder blog 3",
+    "abstract": "placeholder blog  3description",
+    "date": "2025-07-19",
+    "category": "placeholder blog",
+    "link": "/docs/blog/placeholder-blog-3"
+  },
+  {
+    "title": "placeholder blog 2",
+    "abstract": "placeholder blog  2 description",
+    "date": "2025-07-18",
+    "category": "placeholder blog",
+    "link": "/docs/blog/placeholder-blog-2"
+  },
+  {
+    "title": "placeholder blog",
+    "abstract": "placeholder blog description",
+    "date": "2025-03-26",
+    "category": "placeholder blog",
+    "link": "/docs/blog/placeholder-blog-1"
+  }
+]
