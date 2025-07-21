@@ -19,16 +19,32 @@ export function useBlogPosts(): Blog[] {
     return result;
   }
 
-  const promise = fetch('/data/blogs.json')
-    .then(async (response) => {
+  const promise = Promise.all([
+    fetch('/data/blogs.json').then(async (response) => {
       if (!response.ok) {
         throw new Error(`Failed to fetch blogs: ${response.status}`);
       }
       return response.json();
-    })
-    .then((data: Blog[]) => {
-      blogPostsCache.set(cacheKey, data);
-      return data;
+    }),
+    fetch('/data/external-blogs.json').then(async (response) => {
+      if (!response.ok) {
+        throw new Error(`Failed to fetch external blogs: ${response.status}`);
+      }
+      return response.json();
+    }),
+  ])
+    .then(([blogsData, externalBlogsData]: [Blog[], Blog[]]) => {
+      const mergedBlogs = [...blogsData, ...externalBlogsData];
+
+      // Sort by date (newest first)
+      const sortedBlogs = mergedBlogs.sort((a, b) => {
+        const dateA = new Date(a.date);
+        const dateB = new Date(b.date);
+        return dateB.getTime() - dateA.getTime();
+      });
+
+      blogPostsCache.set(cacheKey, sortedBlogs);
+      return sortedBlogs;
     })
     .catch((error) => {
       const errorObj =
@@ -40,4 +56,3 @@ export function useBlogPosts(): Blog[] {
   blogPostsCache.set(cacheKey, promise);
   throw promise;
 }
-

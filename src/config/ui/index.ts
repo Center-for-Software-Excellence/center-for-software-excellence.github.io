@@ -49,7 +49,7 @@ const getTopbarUIConfig = (): TopbarUIConfig => ({
 });
 
 const getFooterUIConfig = (): FooterUIConfig => ({
-  title: 'Center for Software Excellence',
+  title: 'Centre for Software Excellence',
   subtitle: '',
   rights: '© 2025 All rights reserved.',
   links: [

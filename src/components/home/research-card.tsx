@@ -1,9 +1,10 @@
 import { ExternalLink } from 'lucide-react';
 import { Link } from 'react-router';
 
-import { cn } from '@/lib/utils';
+import { cn, formatDate } from '@/lib/utils';
 import { Badge } from '../common/badge';
 import { Card, CardContent } from '../common/ui/card';
+import { Divider } from '../common/ui/divider';
 
 export function ResearchCard({
   pub,
@@ -26,10 +27,10 @@ export function ResearchCard({
     >
       <Card
         className={cn(
-          'h-full w-full py-2 transition-all duration-300 hover:border-foreground dark:hover:border-active',
+          'h-full w-full rounded border-none bg-transparent py-2 shadow-none transition-all duration-300 hover:border-foreground dark:bg-transparent dark:hover:border-active',
         )}
       >
-        <CardContent className="p-6">
+        <CardContent className="p-6 transition-all duration-300 ease-in-out group-hover:translate-y-[2px] group-hover:scale-[95%]">
           <div className="flex items-start justify-between">
             <div className="flex-1">
               <div className="mb-2 flex items-center gap-3">
@@ -49,7 +50,7 @@ export function ResearchCard({
                   {pub.type}
                 </Badge>
                 <span className="text-sm text-muted-foreground">
-                  {pub.date}
+                  {formatDate(pub.date)}
                 </span>
               </div>
               <h3 className="mb-2 text-xl font-semibold text-foreground transition-colors dark:group-hover:text-active">
@@ -65,6 +66,18 @@ export function ResearchCard({
             <ExternalLink className="h-4 w-4 opacity-0 transition-opacity group-hover:opacity-100 dark:text-active" />
           </div>
         </CardContent>
+        <div className="relative mb-8 flex w-full items-center justify-center overflow-x-visible">
+          <span
+            className={cn(
+              'animate-expand-x absolute left-1/2 h-px w-full -translate-x-1/2 bg-[linear-gradient(to_right,transparent_0%,var(--border)_10%,var(--border)_90%,transparent_100%)] md:w-[calc(100vw-17.5rem)]',
+            )}
+          />
+          <span
+            className={cn(
+              'animate-expand-x absolute left-1/2 h-px w-full -translate-x-1/2 scale-x-0 bg-[linear-gradient(to_right,transparent_0%,var(--foreground)_10%,var(--foreground)_90%,transparent_100%)] opacity-0 transition-all duration-300 ease-in-out group-hover:scale-x-100 group-hover:opacity-100 md:w-[calc(100vw-17.5rem)] dark:bg-[linear-gradient(to_right,transparent_0%,var(--color-active)_10%,var(--color-active)_90%,transparent_100%)]',
+            )}
+          />
+        </div>
       </Card>
     </Link>
   );

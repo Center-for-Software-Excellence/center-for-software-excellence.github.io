@@ -1,7 +1,7 @@
 import { Suspense, useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, MoreHorizontal } from 'lucide-react';
 import { Link } from 'react-router';
 
 import { BlogsSkeleton, ResearchSkeleton } from '@/components/common/skeleton';
@@ -54,6 +54,11 @@ function LatestResearchSection({
           {publications.slice(0, 3).map((pub, idx) => (
             <ResearchCard key={'research-' + idx} pub={pub} />
           ))}
+          <div className="flex w-full justify-end pr-12">
+            <Link to={base}>
+              <MoreHorizontal className="h-6 w-6 text-muted-foreground transition-all duration-300 ease-in-out hover:scale-120 hover:text-foreground dark:hover:text-active" />
+            </Link>
+          </div>
         </div>
       </div>
     </section>
@@ -244,7 +249,7 @@ export default function Page() {
           <div className="relative z-10 container mx-auto flex flex-1 flex-col items-center justify-center px-4">
             <div className="mx-auto max-w-4xl text-center">
               <h1 className="my-6 text-4xl font-bold text-foreground md:text-5xl">
-                Center for Software Excellence
+                Centre for Software Excellence
               </h1>
               <p className="mx-auto mb-12 max-w-3xl text-xl leading-relaxed text-muted-foreground">
                 We are a team of researchers and innovators passionate about
@@ -267,7 +272,12 @@ export default function Page() {
                   size="lg"
                   className="right-0 rounded-full bg-transparent px-8 py-4 text-lg sm:absolute"
                 >
-                  Open Positions
+                  <Link
+                    to="https://huaweicanada.recruitee.com/?jobs-7d390cc9%5Bcity%5D%5B%5D=Kingston"
+                    className="flex items-center hover:no-underline"
+                  >
+                    Open Positions
+                  </Link>
                 </Button>
               </div>
             </div>

@@ -27,8 +27,14 @@ export function usePublications(): Publication[] {
       return response.json();
     })
     .then((data: Publication[]) => {
-      publicationsCache.set(cacheKey, data);
-      return data;
+      // Sort by date (newest first)
+      const sortedPublications = data.sort((a, b) => {
+        const dateA = new Date(a.date);
+        const dateB = new Date(b.date);
+        return dateB.getTime() - dateA.getTime();
+      });
+      publicationsCache.set(cacheKey, sortedPublications);
+      return sortedPublications;
     })
     .catch((error) => {
       const errorObj =
@@ -40,4 +46,3 @@ export function usePublications(): Publication[] {
   publicationsCache.set(cacheKey, promise);
   throw promise;
 }
-

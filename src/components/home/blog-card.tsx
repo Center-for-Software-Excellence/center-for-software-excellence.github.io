@@ -2,7 +2,7 @@ import { ArrowUpRight } from 'lucide-react';
 import { Link } from 'react-router';
 
 import { Blog } from '@/config/home';
-import { cn } from '@/lib/utils';
+import { cn, formatDate } from '@/lib/utils';
 import { Badge } from '../common/badge';
 import {
   Card,
@@ -33,7 +33,9 @@ export function BlogCard({ clamp = false, className, blog }: BlogCardProps) {
             >
               {blog.category}
             </Badge>
-            <span className="text-sm text-muted-foreground">{blog.date}</span>
+            <span className="text-sm text-muted-foreground">
+              {formatDate(blog.date)}
+            </span>
           </div>
           <CardTitle className="text-lg transition-colors group-hover:text-foreground dark:group-hover:text-active">
             {blog.title}
