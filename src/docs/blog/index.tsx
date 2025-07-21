@@ -5,7 +5,7 @@ import { useBlogPosts } from '@/hooks/use-blog-posts';
 export default function BlogsPage() {
   const blogs = useBlogPosts();
   return (
-    <div className="mx-auto px-4 py-8">
+    <div className="mx-auto py-8 md:px-4">
       <FrontmatterForTSX
         frontmatter={{
           title: 'Blogs',

@@ -1,4 +1,4 @@
-import { Suspense, useEffect, useRef, useState } from 'react';
+import { Suspense } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ArrowRight, MoreHorizontal } from 'lucide-react';
@@ -11,7 +11,7 @@ import { UnderlineLink } from '@/components/common/underline-link';
 import { BlogCard } from '@/components/home/blog-card';
 import { CollaboratorCard } from '@/components/home/collaborator-card';
 import { ResearchCard } from '@/components/home/research-card';
-import { getHomeConfig } from '@/config/home';
+import { Collaborator, getHomeConfig } from '@/config/home';
 import { useBlogPosts } from '@/hooks/use-blog-posts';
 import { usePublications } from '@/hooks/use-publications';
 import { cn } from '@/lib/utils';
@@ -39,9 +39,9 @@ function LatestResearchSection({
   return (
     <section className="w-full overflow-hidden">
       <div className="mx-auto mt-16 flex max-w-4xl flex-col justify-center px-8 text-start">
-        <div className="item-center flex justify-between">
-          <h2 className="mb-4 text-xl font-bold md:text-2xl">{title}</h2>
-          <UnderlineLink href={base}>
+        <div className="item-start flex justify-between">
+          <h2 className="mb-4 h-8 text-xl font-bold md:text-2xl">{title}</h2>
+          <UnderlineLink href={base} className="flex h-8 items-center">
             <span className="flex items-center gap-2">
               {viewAll} <ArrowRight className="ml-1 h-4 w-4" />
             </span>
@@ -49,10 +49,10 @@ function LatestResearchSection({
         </div>
         <p className="mb-8 text-base text-muted-foreground">{description}</p>
       </div>
-      <div className="mx-auto max-w-4xl">
-        <div className="flex w-full flex-col items-center gap-4 p-4 md:px-8">
+      <div className="relative mx-auto max-w-4xl">
+        <div className="flex w-full flex-col items-center gap-4 p-8 md:px-8">
           {publications.slice(0, 3).map((pub, idx) => (
-            <ResearchCard key={'research-' + idx} pub={pub} />
+            <ResearchCard key={'research-' + idx} pub={pub} isArticle={true} />
           ))}
           <div className="flex w-full justify-end pr-12">
             <Link to={base}>
@@ -79,9 +79,9 @@ function LatestBlogsSection({ blogsSection }: { blogsSection: BlogsSection }) {
   return (
     <section className="w-full overflow-hidden">
       <div className="mx-auto mt-16 flex max-w-4xl flex-col justify-center px-8 text-start">
-        <div className="item-center flex justify-between">
-          <h2 className="mb-4 text-xl font-bold md:text-2xl">{title}</h2>
-          <UnderlineLink href={base}>
+        <div className="item-start flex justify-between">
+          <h2 className="mb-4 h-8 text-xl font-bold md:text-2xl">{title}</h2>
+          <UnderlineLink href={base} className="flex h-8 items-center">
             <span className="flex items-center gap-2">
               {viewAll} <ArrowRight className="ml-1 h-4 w-4" />
             </span>
@@ -121,82 +121,29 @@ function CollaboratorsSection({
   collaborators,
   collaboratorsTitle,
 }: {
-  collaborators: any[];
+  collaborators: Collaborator[];
   collaboratorsTitle: string;
 }) {
-  const [displayedCollaborators, setDisplayedCollaborators] = useState<any[]>(
-    [],
-  );
-  const [isLoading, setIsLoading] = useState(false);
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
-  const trackRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    setDisplayedCollaborators([...collaborators, ...collaborators]);
-  }, [collaborators]);
-
-  useEffect(() => {
-    const loadMoreCollaborators = () => {
-      if (isLoading) return;
-
-      setIsLoading(true);
-      setTimeout(() => {
-        setDisplayedCollaborators((prev) => [...prev, ...collaborators]);
-        setIsLoading(false);
-      }, 200);
-    };
-    const container = scrollContainerRef.current;
-    if (!container) return;
-
-    const handleScroll = () => {
-      const { scrollLeft, scrollWidth, clientWidth } = container;
-      const isNearEnd = scrollLeft + clientWidth >= scrollWidth - 200;
-
-      if (isNearEnd && !isLoading) {
-        loadMoreCollaborators();
-      }
-    };
-
-    container.addEventListener('scroll', handleScroll);
-    return () => container.removeEventListener('scroll', handleScroll);
-  }, [collaborators, isLoading]);
-
   return (
-    <section className="w-full overflow-hidden py-20">
-      <div className="mx-auto flex max-w-4xl flex-col justify-center px-8 text-start">
-        <div className="item-center flex justify-center">
-          <h2 className="mb-4 text-xl font-bold md:text-2xl">
+    <section className="mb-12 w-full overflow-hidden">
+      <div className="mx-auto mt-16 flex max-w-6xl flex-col justify-center text-start">
+        <div className="mx-auto mt-8 grid max-w-6xl grid-cols-2 items-start justify-between gap-4 px-8 text-foreground md:grid-cols-3 md:px-8 lg:grid-cols-4">
+          <h6 className="relateive w-full rounded-lg bg-foreground pt-4 text-base font-bold text-background md:p-4 dark:bg-active">
+            <span className="text-zinc-400 dark:text-background">Our </span>
             {collaboratorsTitle}
-          </h2>
-        </div>
-      </div>
-      <div className="relative">
-        <div
-          ref={scrollContainerRef}
-          className="collaborators-scroll-container scrollbar-hide relative overflow-x-auto overflow-y-hidden"
-          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-        >
-          <div
-            ref={trackRef}
-            className="collaborators-scroll-track flex gap-6 px-8 py-4"
-          >
-            {displayedCollaborators.map((collaborator, index) => (
-              <CollaboratorCard
-                key={`collaborator-${index}`}
-                collaborator={collaborator}
-              />
+          </h6>
+          {collaborators
+            .sort((a, b) => a.people.length - b.people.length)
+            .map((collab, idx) => (
+              <CollaboratorCard key={idx} collaborator={collab} />
             ))}
-            {isLoading && (
-              <div className="flex w-64 flex-shrink-0 items-center justify-center">
-                <div className="h-8 w-8 animate-spin rounded-full border-b-2 border-primary"></div>
-              </div>
-            )}
-          </div>
         </div>
       </div>
     </section>
   );
 }
+
+// Enhanced CollaboratorCard with elegant styling
 
 export default function Page() {
   const { collaborators, researchSection, blogsSection, collaboratorsTitle } =
@@ -248,10 +195,10 @@ export default function Page() {
 
           <div className="relative z-10 container mx-auto flex flex-1 flex-col items-center justify-center px-4">
             <div className="mx-auto max-w-4xl text-center">
-              <h1 className="my-6 text-4xl font-bold text-foreground md:text-5xl">
+              <h1 className="my-6 text-3xl font-bold text-foreground md:text-5xl">
                 Centre for Software Excellence
               </h1>
-              <p className="mx-auto mb-12 max-w-3xl text-xl leading-relaxed text-muted-foreground">
+              <p className="mx-auto mb-12 max-w-3xl text-base leading-relaxed text-muted-foreground md:text-xl">
                 We are a team of researchers and innovators passionate about
                 exploring the frontiers of artificial intelligence and software
                 engineering. Our mission is to advance the state of the art in
@@ -292,7 +239,6 @@ export default function Page() {
         <Suspense fallback={<ResearchSkeleton />}>
           <LatestResearchSection researchSection={researchSection} />
         </Suspense>
-        <Divider className="mt-28" />
         {/* Collaborators Section */}
         <CollaboratorsSection
           collaborators={collaborators}

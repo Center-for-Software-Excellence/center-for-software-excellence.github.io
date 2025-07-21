@@ -12,7 +12,7 @@ function ResearchContent() {
 
 export default function ResearchPage() {
   return (
-    <div className="mx-auto px-4 py-8">
+    <div className="mx-auto py-8 md:px-4">
       <FrontmatterForTSX
         frontmatter={{
           title: 'Research',

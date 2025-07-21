@@ -1,23 +1,16 @@
 [
   {
-    "title": "placeholder blog 3",
-    "abstract": "placeholder blog  3description",
-    "date": "2025-07-09",
-    "category": "placeholder blog",
-    "link": "/docs/blog/placeholder-blog-3"
+    "title": "Another Blog Post",
+    "abstract": "This should be the other blog post.",
+    "date": "2025-07-15",
+    "category": "General",
+    "link": "/docs/blog/anotherblog"
   },
   {
-    "title": "placeholder blog 2",
-    "abstract": "placeholder blog  2 description",
-    "date": "2025-07-08",
-    "category": "placeholder blog",
-    "link": "/docs/blog/placeholder-blog-2"
-  },
-  {
-    "title": "placeholder blog",
-    "abstract": "placeholder blog description",
-    "date": "2025-03-26",
-    "category": "placeholder blog",
-    "link": "/docs/blog/placeholder-blog-1"
+    "title": "More blog posts are coming soon!",
+    "abstract": "This is a placeholder for more blog posts that will be added soon.",
+    "date": "2025-07-14",
+    "category": "General",
+    "link": "/docs/blog/moreblog"
   }
 ]

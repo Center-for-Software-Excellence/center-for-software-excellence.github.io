@@ -1,4 +1,5 @@
 import { Collaborator } from '@/config/home';
+import { UnderlineText } from '../common/ui/underline-text';
 
 export function CollaboratorCard({
   collaborator,
@@ -6,28 +7,17 @@ export function CollaboratorCard({
   collaborator: Collaborator;
 }) {
   return (
-    <div className="group w-64 flex-shrink-0 bg-card/50 backdrop-blur-sm transition-all duration-300">
-      <div className="flex flex-col justify-between p-6 text-center">
-        <div className="relative mb-4">
-          <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full border-1 border-primary/20 bg-accent transition-all duration-300 group-hover:scale-110 group-hover:border-primary/40 dark:group-hover:border-active">
-            <span className="text-lg font-bold text-primary">
-              {collaborator.name
-                .split(' ')
-                .map((name) => name[0])
-                .join('')
-                .slice(0, 2)}
-            </span>
-          </div>
-        </div>
-        <div>
-          <h3 className="mb-1 font-semibold text-foreground transition-colors group-hover:text-primary">
-            {collaborator.name}
-          </h3>
-          <p className="text-sm text-muted-foreground transition-colors group-hover:text-foreground">
-            {collaborator.org}
-          </p>
-        </div>
-      </div>
+    <div className="flex flex-col items-start justify-center pt-4 md:p-4">
+      <h6 className="relative w-full border-border text-sm">
+        {collaborator.org}
+      </h6>
+      {collaborator.people.map((person) => (
+        <UnderlineText className="cursor-default">
+          <span className="self-start text-sm text-muted-foreground">
+            {person.name}
+          </span>
+        </UnderlineText>
+      ))}
     </div>
   );
 }

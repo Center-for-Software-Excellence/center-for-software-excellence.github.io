@@ -17,10 +17,14 @@ export interface Publication {
   paperLink?: string;
 }
 
-export interface Collaborator {
-  image?: string;
+type People = {
   name: string;
+  image?: string;
+};
+
+export interface Collaborator {
   org: string;
+  people: People[];
 }
 
 export interface HomeConfig {
@@ -43,118 +47,115 @@ export const getHomeConfig = (): HomeConfig => ({
     description: 'Description about the blogs we posts',
     viewAll: 'View All',
   },
-  collaboratorsTitle: 'Our Collaborators',
+  collaboratorsTitle: 'Collaborators',
   collaborators: [
     {
-      image: '',
-      name: 'Julia Rubin',
-      org: 'UBC',
+      org: 'University of British Columbia',
+      people: [
+        {
+          name: 'Julia Rubin',
+        },
+        {
+          name: 'Dongwook yoon',
+        },
+        {
+          name: 'Elisa Banlassad',
+        },
+        {
+          name: 'Konstantin Beznosov',
+        },
+        {
+          name: 'Ivan Beschastnikh',
+        },
+        {
+          name: 'Ali Mesbah',
+        },
+      ],
     },
     {
-      image: '',
-      name: 'Elisa Banlassad',
-      org: 'UBC',
-    },
-    {
-      image: '',
-      name: 'Dongwook Yoon',
-      org: 'UBC',
-    },
-    {
-      image: '',
-      name: 'Konstantin Beznosov',
-      org: 'UBC',
-    },
-    {
-      image: '',
-      name: 'Ivan Beschastnikh',
-      org: 'UBC',
-    },
-    {
-      image: '',
-      name: 'Ali Mesbah',
-      org: 'UBC',
-    },
-    {
-      image: '',
-      name: 'Shaowei Wang',
       org: 'University of Manitoba',
+      people: [
+        {
+          name: 'Shaowei Wang',
+        },
+      ],
     },
     {
-      image: '',
-      name: 'Weiyi Shang',
       org: 'University of Waterloo',
+      people: [
+        {
+          name: 'Weiyi Shang',
+        },
+      ],
     },
     {
-      image: '',
-      name: 'Lionel Briand',
       org: 'University of Ottawa',
+      people: [
+        {
+          name: 'Lionel Briand',
+        },
+      ],
     },
     {
-      image: '',
-      name: 'Rongxing Lu',
       org: 'University of New Brunswick',
+      people: [
+        {
+          name: 'Rongxing Lu',
+        },
+      ],
     },
     {
-      image: '',
-      name: 'Ying Zou',
       org: 'Queen’s University',
+      people: [
+        { name: 'Ying Zou' },
+        {
+          name: 'Bram Adams',
+        },
+        {
+          name: 'James Cordy',
+        },
+      ],
     },
     {
-      image: '',
-      name: 'Yue Li',
-      org: 'University of Alberta',
-    },
-    {
-      image: '',
-      name: 'Yongsheng Li',
-      org: 'University of Alberta',
-    },
-    {
-      image: '',
-      name: 'Bram Adams',
-      org: "Queen's University",
-    },
-    {
-      image: '',
-      name: 'James Cordy',
-      org: "Queen's University",
-    },
-    {
-      image: '',
-      name: 'Ying Zou',
-      org: "Queen's University",
-    },
-    {
-      image: '',
-      name: 'Jinqiu Yang',
       org: 'Concordia University',
+      people: [
+        {
+          name: 'Jinqiu Yang',
+        },
+        {
+          name: 'Peter Chen',
+        },
+      ],
     },
     {
-      image: '',
-      name: 'Peter Chen',
-      org: 'Concordia University',
-    },
-    {
-      image: '',
-      name: 'Foutse Khomh',
       org: 'Polytechnique Montreal',
+      people: [
+        {
+          name: 'Foutse Khomh',
+        },
+      ],
     },
     {
-      name: 'Jack Jiang',
       org: 'York University',
+      people: [
+        {
+          name: 'Jack Jiang',
+        },
+        {
+          name: 'Song Wang',
+        },
+        {
+          name: 'Zhenhao Li',
+        },
+      ],
     },
     {
-      name: 'Song Wang',
-      org: 'York University',
-    },
-    {
-      name: 'Zhenhao Li',
-      org: 'York University',
-    },
-    {
-      name: 'Shurui Zhou',
       org: 'University of Toronto',
+      people: [
+        {
+          name: 'Shurui Zhou',
+        },
+      ],
     },
   ],
 });

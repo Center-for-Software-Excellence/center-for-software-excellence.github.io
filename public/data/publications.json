@@ -11,7 +11,7 @@
   {
     "title": "Context-Aware CodeLLM Eviction for AI-assisted Coding",
     "abstract": "We present a context-aware eviction strategy for CodeLLMs in AI-assisted coding environments. Our approach considers the contextual relevance and usage patterns of code completions to optimize memory utilization and response time. The method demonstrates improved performance in resource-constrained environments while maintaining code suggestion quality.",
-    "date": "2025-06-30",
+    "date": "2025-06-23",
     "authors": [
       "Kishanthan Thangarajah",
       "Boyuan Chen",
@@ -87,7 +87,7 @@
   {
     "title": "SLA-Awareness for AI-assisted coding",
     "abstract": "We introduce SLA-aware mechanisms for AI-assisted coding systems that ensure service level agreement compliance while providing code suggestions. Our approach balances code quality, response time, and system reliability to meet specified SLA requirements. The system demonstrates consistent performance across various coding scenarios and workloads.",
-    "date": "2025-03-30",
+    "date": "2025-03-25",
     "authors": [
       "Kishanthan Thangarajah",
       "Alex Leung",
@@ -113,30 +113,6 @@
     "paperLink": "https://arxiv.org/pdf/2503.17534"
   },
   {
-    "title": "PhysGen3D: Crafting a Miniature Interactive World from a Single Image",
-    "abstract": "We present PhysGen3D, a novel approach for generating interactive 3D scenes from a single image. Our method combines physics simulation with 3D generation to create miniature interactive worlds that obey physical laws. Users can interact with the generated scene through physics-based manipulation, making it suitable for applications in robotics simulation, education, and interactive entertainment.",
-    "date": "2025-03-15",
-    "authors": [
-      "Boyuan Chen",
-      "Hao Jiang",
-      "Shuran Liu",
-      "Saurabh Gupta",
-      "Yuke Li"
-    ],
-    "type": "Conference",
-    "link": "/docs/research/physgen3d-crafting-a-miniature-interactive-world-from-a-single-image",
-    "paperLink": "https://openaccess.thecvf.com/content/CVPR2025/html/Chen_PhysGen3D_Crafting_a_Miniature_Interactive_World_from_a_Single_Image_CVPR_2025_paper.html"
-  },
-  {
-    "title": "History-guided Video Diffusion",
-    "abstract": "We introduce a novel approach for video generation using diffusion models that leverages historical frames to guide the generation process. Our method maintains temporal consistency by conditioning on past frames while generating new content, resulting in more coherent and realistic video sequences. The approach demonstrates significant improvements in video quality and temporal coherence across various benchmarks.",
-    "date": "2025-02-12",
-    "authors": ["Kevin Song", "Boyuan Chen", "Max Simchowitz", "Yilun Du"],
-    "type": "Preprint",
-    "link": "/docs/research/history-guided-video-diffusion",
-    "paperLink": "https://arxiv.org/abs/2502.06764"
-  },
-  {
     "title": "Simclone: detecting tabular data clones using value similarity",
     "abstract": "Data clones are defined as multiple copies of the same data among datasets. The presence of data clones between datasets can cause issues such as difficulties in managing data assets and data license violations when using datasets with clones to build AI software. However, detecting data clones is not trivial. The majority of the prior studies in this area rely on structural information to detect data clones (e.g., font size, column header). However, tabular datasets used to build AI software are typically stored without any structural information.",
     "date": "2025-01-21",
@@ -152,29 +128,21 @@
     "paperLink": "https://arxiv.org/pdf/2407.12802"
   },
   {
-    "title": "Controlling Diverse Robots by Inferring Jacobian Fields with Deep Networks",
-    "abstract": "We present a unified approach for controlling diverse robotic systems by learning to infer Jacobian fields using deep neural networks. Our method enables a single learned model to control robots with different morphologies and degrees of freedom without requiring robot-specific training. The approach demonstrates generalization across various robotic platforms and tasks.",
-    "date": "2025-01-08",
+    "title": "A Framework and Taxonomy for Characterizing the Applicability of Software Architecture Recovery Approaches: A Tertiary‐Mapping Study",
+    "abstract": "Software architecture assists developers in addressing non-functional requirements and in maintaining, debugging, and upgrading their software systems. Consequently, consistency between the designed architecture and the implemented software system itself is important; without this consistency the non-functional requirements targeted may not be addressed and architectural documentation may mis-direct maintenance efforts that target the associated code-base.",
+    "date": "2025-07-17",
     "authors": [
-      "Shaohui Liu Li",
-      "Alex Zhang",
-      "Boyuan Chen",
-      "Hod Matusik",
-      "Cathy Liu",
-      "Daniela Rus"
+      "Abdul Qayum",
+      "Mengqi Zhang",
+      "Simon Colreavy",
+      "Muslim Chochlov",
+      "Jim Buckley",
+      "Dayi Lin",
+      "Ashish Rajendra Sai"
     ],
     "type": "Journal",
-    "link": "/docs/research/controlling-diverse-robots-by-inferring-jacobian-fields-with-deep-networks",
-    "paperLink": "https://www.nature.com/articles/s41586-025-09170-0"
-  },
-  {
-    "title": "Diffusion Forcing: Next-token Prediction Meets Full-sequence Diffusion",
-    "abstract": "We introduce Diffusion Forcing, a novel training paradigm that combines the efficiency of next-token prediction with the quality benefits of full-sequence diffusion. Our approach enables models to generate high-quality sequences while maintaining the computational efficiency of autoregressive generation. The method demonstrates significant improvements in sequence generation quality across various domains.",
-    "date": "2024-12-10",
-    "authors": ["Boyuan Chen", "Diego Martí Monsó", "Yilun Du"],
-    "type": "Conference",
-    "link": "/docs/research/diffusion-forcing-next-token-prediction-meets-full-sequence-diffusion",
-    "paperLink": "https://proceedings.neurips.cc/paper_files/paper/2024/hash/2aee1c4159e48407d68fe16ae8e6e49e-Abstract-Conference.html"
+    "link": "/docs/research/a-framework-and-taxonomy-for-characterizing-the-applicability-of-software-architecture-recovery-approaches-a-tertiarymapping-study",
+    "paperLink": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/spe.3364"
   },
   {
     "title": "Engineering AI Judge Systems",
@@ -337,31 +305,6 @@
     "paperLink": "https://dl.acm.org/doi/pdf/10.1145/3663529.3663849"
   },
   {
-    "title": "SpatialVLM: Endowing Vision-Language Models with Spatial Reasoning Capabilities",
-    "abstract": "We introduce SpatialVLM, a vision-language model specifically designed to understand and reason about spatial relationships in images. Our approach combines visual perception with spatial reasoning capabilities, enabling the model to answer complex questions about object locations, spatial arrangements, and geometric relationships. SpatialVLM demonstrates significant improvements on spatial reasoning benchmarks compared to existing vision-language models.",
-    "date": "2024-06-15",
-    "authors": ["Boyuan Chen", "Zhuo Xu", "Sergey Kirmani", "Brian Ichter"],
-    "type": "Conference",
-    "link": "/docs/research/spatialvlm-endowing-vision-language-models-with-spatial-reasoning-capabilities",
-    "paperLink": "http://openaccess.thecvf.com/content/CVPR2024/html/Chen_SpatialVLM_Endowing_Vision-Language_Models_with_Spatial_Reasoning_Capabilities_CVPR_2024_paper.html"
-  },
-  {
-    "title": "Reasoning or Reciting? Exploring the Capabilities and Limitations of Language Models through Counterfactual Tasks",
-    "abstract": "We investigate whether large language models truly reason or merely recite memorized patterns by designing counterfactual tasks that require genuine reasoning capabilities. Our analysis reveals important limitations in current models' reasoning abilities and provides insights into when models rely on memorization versus genuine reasoning. The findings have implications for developing more robust and interpretable language models.",
-    "date": "2024-05-20",
-    "authors": [
-      "Zhaofeng Wu",
-      "Linlu Qiu",
-      "Alexis Ross",
-      "Ekin Akyürek",
-      "Boyuan Chen",
-      "Bailin Wang"
-    ],
-    "type": "Conference",
-    "link": "/docs/research/reasoning-or-reciting-exploring-the-capabilities-and-limitations-of-language-models-through-counterfactual-tasks",
-    "paperLink": "https://open.bu.edu/bitstreams/8faf03b2-0aa7-4d11-96a9-5c59f92235b7/download"
-  },
-  {
     "title": "Keeping deep learning models in check: A history-based approach to mitigate overfitting",
     "abstract": "In software engineering, deep learning models are increasingly deployed for critical tasks such as bug detection and code review. However, overfitting remains a challenge that affects the quality, reliability, and trustworthiness of software systems that utilize deep learning models. Overfitting can be (1) prevented (e.g., using dropout or early stopping) or (2) detected in a trained model (e.g., using correlation-based approaches).",
     "date": "2024-05-17",
@@ -415,68 +358,6 @@
     "paperLink": "https://dl.acm.org/doi/pdf/10.1145/3639478.3643062"
   },
   {
-    "title": "Human-Robot Facial Coexpression",
-    "abstract": "We present a novel approach for enabling robots to express emotions through facial expressions that mirror human emotional states. Our system uses real-time emotion recognition to detect human emotions and generates corresponding facial expressions on a robotic face. The approach enables more natural and empathetic human-robot interactions through synchronized emotional expressions.",
-    "date": "2024-04-10",
-    "authors": [
-      "Yang Hu",
-      "Boyuan Chen",
-      "Jiahui Lin",
-      "Yang Wang",
-      "Yue Wang",
-      "Claire Mehlman"
-    ],
-    "type": "Journal",
-    "link": "/docs/research/human-robot-facial-coexpression",
-    "paperLink": "https://www.science.org/doi/abs/10.1126/scirobotics.adi4724"
-  },
-  {
-    "title": "Aligner: Achieving Efficient Alignment through Weak-to-Strong Correction",
-    "abstract": "We introduce Aligner, a novel approach for achieving efficient alignment in large language models through weak-to-strong correction mechanisms. Our method leverages weaker models to guide the alignment of stronger models, reducing the computational cost and data requirements typically associated with alignment procedures. The approach demonstrates effectiveness across various alignment tasks while maintaining model performance.",
-    "date": "2024-03-08",
-    "authors": [
-      "Jiaming Ji",
-      "Boyuan Chen",
-      "Hantao Lou",
-      "Donghai Hong",
-      "Borong Zhang",
-      "Xuehai Pan"
-    ],
-    "type": "Conference",
-    "link": "/docs/research/aligner-achieving-efficient-alignment-through-weak-to-strong-correction",
-    "paperLink": "https://openreview.net/forum?id=VoS7WQ8Rvm"
-  },
-  {
-    "title": "An Empirical Evaluation of LLMs for Solving Offensive Security Challenges",
-    "abstract": "We conduct a comprehensive empirical evaluation of large language models' capabilities in solving offensive security challenges. Our study examines various LLMs across different types of security tasks, including vulnerability discovery, exploit development, and penetration testing scenarios. The results provide insights into the current capabilities and limitations of LLMs in cybersecurity applications.",
-    "date": "2024-02-20",
-    "authors": [
-      "Mark Shao",
-      "Boyuan Chen",
-      "Silvana Jancheska",
-      "Brendan Dolan-Gavitt"
-    ],
-    "type": "Preprint",
-    "link": "/docs/research/an-empirical-evaluation-of-llms-for-solving-offensive-security-challenges",
-    "paperLink": "https://arxiv.org/abs/2402.11814"
-  },
-  {
-    "title": "AI Alignment: A Comprehensive Survey",
-    "abstract": "We present a comprehensive survey of AI alignment research, covering the current state of the field, key challenges, and potential solutions. Our survey examines various approaches to aligning AI systems with human values and intentions, including reward modeling, constitutional AI, and interpretability techniques. The work provides a structured overview of the alignment landscape and identifies promising research directions.",
-    "date": "2023-10-30",
-    "authors": [
-      "Jiaming Ji",
-      "Tianyi Qiu",
-      "Boyuan Chen",
-      "Borong Zhang",
-      "Hantao Lou",
-      "Kaile Wang"
-    ],
-    "type": "Preprint",
-    "link": "/docs/research/ai-alignment-a-comprehensive-survey",
-    "paperLink": "https://arxiv.org/abs/2310.19852"
-  },
-  {
     "title": "An Empirical Comparison on the Results of Different Clone Detection Setups for C-based Projects",
     "abstract": "Code clone detection is a fundamental technique in software engineering that helps identify similar code fragments within or across software projects. Various clone detection tools and configurations have been proposed, but their effectiveness can vary significantly depending on the setup and the characteristics of the target projects. This study presents an empirical comparison of different clone detection setups specifically for C-based projects.",
     "date": "2023-05-14",
@@ -490,15 +371,6 @@
     "type": "Conference",
     "link": "/docs/research/an-empirical-comparison-on-the-results-of-different-clone-detection-setups-for-c-based-projects",
     "paperLink": "https://dl.acm.org/doi/10.1145/3510458.3513025"
-  },
-  {
-    "title": "Understanding Why ViT Trains Badly on Small Datasets: An Intuitive Perspective",
-    "abstract": "We investigate why Vision Transformers (ViTs) struggle to achieve good performance when trained on small datasets. Through empirical analysis and theoretical insights, we identify key factors that contribute to this limitation and propose modifications to improve ViT performance on small-scale data. Our findings provide practical guidance for applying transformers in data-limited scenarios.",
-    "date": "2023-02-07",
-    "authors": ["Hao Zhu", "Boyuan Chen", "Cheng Yang"],
-    "type": "Preprint",
-    "link": "/docs/research/understanding-why-vit-trains-badly-on-small-datasets-an-intuitive-perspective",
-    "paperLink": "https://arxiv.org/abs/2302.03751"
   },
   {
     "title": "Towards training reproducible deep learning models",
@@ -535,7 +407,7 @@
     "title": "Systems, methods, and non-transitory computer-readable storage devices for detecting and analyzing data clones in tabular datasets",
     "abstract": "A computerized method for detecting and analyzing data clones in one or more dataset pairs has the steps of: obtaining one or more similarity matrices and one or more sets of readout values of the one or more similarity matrices from the dataset pairs using a data-clone detection method, each set of readout values corresponding to a similarity matrix; obtaining one or more importance values for the one or more similarity matrices by processing the one or more sets of readout values using an interpretation method.",
     "date": "2022-05-09",
-    "authors": ["Xu Yang", "Gopi Krishnan RAJBAHADUR", "Dayi Lin"],
+    "authors": ["Xu Yang", "Gopi Krishnan Rajbahadur", "Dayi Lin"],
     "type": "Patent",
     "link": "/docs/research/systems-methods-and-nontransitory-computerreadable-storage-devices-for-detecting-and-analyzing-data-clones-in-tabular-datasets",
     "paperLink": "https://patentimages.storage.googleapis.com/22/01/b9/3637dd26320e1f/US20240152578A1.pdf"
@@ -546,7 +418,7 @@
     "date": "2022-05-09",
     "authors": [
       "Hao Li",
-      "Gopi Krishnan RAJBAHADUR",
+      "Gopi Krishnan Rajbahadur",
       "Dayi Lin",
       "Zhenming Jiang"
     ],
@@ -555,23 +427,9 @@
     "paperLink": "https://patentimages.storage.googleapis.com/b4/93/d7/8259f2f4d693d6/US20240152805A1.pdf"
   },
   {
-    "title": "Fully Body Visual Self-Modeling of Robot Morphologies",
-    "abstract": "We present a method for robots to learn visual models of their own morphology through self-observation. Our approach enables robots to build accurate visual representations of their body structure without prior knowledge of their physical configuration. The learned self-models can be used for improved manipulation, navigation, and self-diagnosis capabilities.",
-    "date": "2022-03-18",
-    "authors": [
-      "Boyuan Chen",
-      "Robert Kwiatkowski",
-      "Carl Vondrick",
-      "Hod Lipson"
-    ],
-    "type": "Journal",
-    "link": "/docs/research/fully-body-visual-self-modeling-of-robot-morphologies",
-    "paperLink": "https://www.science.org/doi/abs/10.1126/scirobotics.abn1944"
-  },
-  {
     "title": "Towards a consistent interpretation of AIOps models",
     "abstract": "Artificial Intelligence for IT Operations (AIOps) has been adopted in organizations in various tasks, including interpreting models to identify indicators of service failures. To avoid misleading practitioners, AIOps model interpretations should be consistent (i.e., different AIOps models on the same task agree with one another on feature importance). However, many AIOps studies violate established practices in the machine learning community when deriving interpretations.",
-    "date": "2021-12-01",
+    "date": "2021-11-15",
     "authors": [
       "Yingzhe Lyu",
       "Gopi Krishnan Rajbahadur",
@@ -582,15 +440,6 @@
     "type": "Journal",
     "link": "/docs/research/towards-a-consistent-interpretation-of-aiops-models",
     "paperLink": "https://dl.acm.org/doi/pdf/10.1145/3488269"
-  },
-  {
-    "title": "Visual Behavior Modelling for Robotic Theory of Mind",
-    "abstract": "We introduce a computational approach for enabling robots to develop theory of mind capabilities through visual behavior modeling. Our method allows robots to predict and understand the mental states and intentions of other agents by observing their visual behaviors. The approach demonstrates applications in human-robot collaboration and social robotics scenarios.",
-    "date": "2021-11-15",
-    "authors": ["Boyuan Chen", "Carl Vondrick", "Hod Lipson"],
-    "type": "Journal",
-    "link": "/docs/research/visual-behavior-modelling-for-robotic-theory-of-mind",
-    "paperLink": "https://www.nature.com/articles/s41598-020-77918-x"
   },
   {
     "title": "Can I use this publicly available dataset to build commercial AI software?--A Case Study on Publicly Available Image Datasets",
@@ -612,7 +461,7 @@
   {
     "title": "An experience report on producing verifiable builds for large-scale commercial systems",
     "abstract": "We present an experience report on implementing verifiable builds for large-scale commercial software systems. Our report covers the challenges, solutions, and lessons learned from deploying verifiable build processes in industrial settings. The findings provide practical insights for organizations seeking to enhance their software supply chain security through build verification.",
-    "date": "2021-09-15",
+    "date": "2021-06-15",
     "authors": [
       "Yong Shi",
       "Mingzhi Wen",
@@ -627,7 +476,7 @@
   {
     "title": "The Impact of Data Merging on the Interpretation of Cross-Project Just-In-Time Defect Models",
     "abstract": "Just-In-Time (JIT) defect models are classification models that identify the code commits that are likely to introduce defects. Cross-project JIT models have been introduced to address the suboptimal performance of JIT models when historical data is limited. However, many studies built cross-project JIT models using a pool of mixed data from multiple projects (i.e., data merging)—assuming that the properties of defect-introducing commits of a project are similar to that of the other projects, which is likely not true.",
-    "date": "2021-04-01",
+    "date": "2021-04-19",
     "authors": [
       "Dayi Lin",
       "Chakkrit (Kla) Tantithamthavorn",
@@ -640,27 +489,10 @@
   {
     "title": "A survey of software log instrumentation",
     "abstract": "We present a comprehensive survey of software log instrumentation practices, techniques, and tools. Our survey covers the evolution of logging frameworks, best practices for log instrumentation, and emerging trends in log analysis and management. The work provides guidance for developers and researchers on effective logging strategies for modern software systems.",
-    "date": "2021-04-01",
+    "date": "2021-05-03",
     "authors": ["Boyuan Chen", "Zhen Ming Jiang"],
     "type": "Journal",
     "link": "/docs/research/a-survey-of-software-log-instrumentation",
     "paperLink": "https://dl.acm.org/doi/10.1145/3456634"
-  },
-  {
-    "title": "A Framework and Taxonomy for Characterizing the Applicability of Software Architecture Recovery Approaches: A Tertiary‐Mapping Study",
-    "abstract": "Software architecture assists developers in addressing non-functional requirements and in maintaining, debugging, and upgrading their software systems. Consequently, consistency between the designed architecture and the implemented software system itself is important; without this consistency the non-functional requirements targeted may not be addressed and architectural documentation may mis-direct maintenance efforts that target the associated code-base.",
-    "date": "2021-01-01",
-    "authors": [
-      "Abdul Qayum",
-      "Mengqi Zhang",
-      "Simon Colreavy",
-      "Muslim Chochlov",
-      "Jim Buckley",
-      "Dayi Lin",
-      "Ashish Rajendra Sai"
-    ],
-    "type": "Journal",
-    "link": "/docs/research/a-framework-and-taxonomy-for-characterizing-the-applicability-of-software-architecture-recovery-approaches-a-tertiarymapping-study",
-    "paperLink": "https://onlinelibrary.wiley.com/doi/pdf/10.1002/spe.3364"
   }
 ]

@@ -14,27 +14,29 @@ export function Footer() {
       <div className="flex h-full w-full flex-col gap-4 p-6 py-8 lg:px-8">
         <div className="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0">
           <div className="relative flex items-center gap-2">
-            <Small className="text-foreground/85">{ui.title}</Small>
+            {/* <Small className="text-foreground/85">{ui.title}</Small> */}
           </div>
         </div>
-        <div className="flex w-full items-center justify-between space-x-2">
-          <Muted className="text-muted-foreground md:w-62">{ui.rights}</Muted>
-          <div className="flex items-center space-x-6">
-            {ui.links
-              .filter((l) => !l.disabled)
-              .map(
-                (link, index) =>
-                  !link.disabled && (
-                    <UnderlineLink
-                      href={link.href}
-                      key={index}
-                      position="middle"
-                      gradient={true}
-                    >
-                      {link.title}
-                    </UnderlineLink>
-                  ),
-              )}
+        <div className="flex w-full flex-col items-center justify-between sm:flex-row">
+          <Muted className="text-muted-foreground md:w-62">{ui.title}</Muted>
+          <div className="flex space-x-4">
+            <div className="flex flex-wrap items-center space-x-4">
+              {ui.links
+                .filter((l) => !l.disabled)
+                .map(
+                  (link, index) =>
+                    !link.disabled && (
+                      <UnderlineLink
+                        href={link.href}
+                        key={index}
+                        position="middle"
+                        gradient={true}
+                      >
+                        {link.title}
+                      </UnderlineLink>
+                    ),
+                )}
+            </div>
             <ModeToggle />
           </div>
         </div>

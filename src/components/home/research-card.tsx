@@ -4,11 +4,11 @@ import { Link } from 'react-router';
 import { cn, formatDate } from '@/lib/utils';
 import { Badge } from '../common/badge';
 import { Card, CardContent } from '../common/ui/card';
-import { Divider } from '../common/ui/divider';
 
 export function ResearchCard({
   pub,
   className,
+  isArticle = false,
 }: {
   pub: {
     title: string;
@@ -19,6 +19,7 @@ export function ResearchCard({
     link: string;
   };
   className?: string;
+  isArticle?: boolean;
 }) {
   return (
     <Link
@@ -30,7 +31,7 @@ export function ResearchCard({
           'h-full w-full rounded border-none bg-transparent py-2 shadow-none transition-all duration-300 hover:border-foreground dark:bg-transparent dark:hover:border-active',
         )}
       >
-        <CardContent className="p-6 transition-all duration-300 ease-in-out group-hover:translate-y-[2px] group-hover:scale-[95%]">
+        <CardContent className="px-0 py-6 transition-all duration-300 ease-in-out group-hover:translate-y-[2px] group-hover:scale-[95%] sm:px-2 md:px-6">
           <div className="flex items-start justify-between">
             <div className="flex-1">
               <div className="mb-2 flex items-center gap-3">
@@ -69,12 +70,15 @@ export function ResearchCard({
         <div className="relative mb-8 flex w-full items-center justify-center overflow-x-visible">
           <span
             className={cn(
-              'animate-expand-x absolute left-1/2 h-px w-full -translate-x-1/2 bg-[linear-gradient(to_right,transparent_0%,var(--border)_10%,var(--border)_90%,transparent_100%)] md:w-[calc(100vw-17.5rem)]',
+              'animate-expand-x absolute left-1/2 h-px w-full -translate-x-1/2 bg-[linear-gradient(to_right,transparent_0%,var(--border)_10%,var(--border)_90%,transparent_100%)]',
+              isArticle ? 'md:w-4xl' : 'md:w-[calc(90vw-17.5rem)]',
             )}
           />
           <span
             className={cn(
-              'animate-expand-x absolute left-1/2 h-px w-full -translate-x-1/2 scale-x-0 bg-[linear-gradient(to_right,transparent_0%,var(--foreground)_10%,var(--foreground)_90%,transparent_100%)] opacity-0 transition-all duration-300 ease-in-out group-hover:scale-x-100 group-hover:opacity-100 md:w-[calc(100vw-17.5rem)] dark:bg-[linear-gradient(to_right,transparent_0%,var(--color-active)_10%,var(--color-active)_90%,transparent_100%)]',
+              'animate-expand-x absolute left-1/2 h-px w-full -translate-x-1/2 scale-x-0 bg-[linear-gradient(to_right,transparent_0%,var(--foreground)_10%,var(--foreground)_90%,transparent_100%)] opacity-0 transition-all duration-300 ease-in-out group-hover:scale-x-100 group-hover:opacity-100 dark:bg-[linear-gradient(to_right,transparent_0%,var(--color-active)_10%,var(--color-active)_90%,transparent_100%)]',
+
+              isArticle ? 'md:w-4xl' : 'md:w-[calc(90vw-17.5rem)]',
             )}
           />
         </div>

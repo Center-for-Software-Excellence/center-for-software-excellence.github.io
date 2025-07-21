@@ -32,7 +32,6 @@ function ListPagination({
   goPage: (page: number) => void;
   numPages?: number;
 }) {
-  console.log('Current page: ', currentPage);
   return (
     numPages &&
     numPages > 1 && (
@@ -157,7 +156,6 @@ export function ResearchList({ content, itemsPerPage = 5 }: ResearchListProps) {
     console.log('setting page to ', newPage);
     setPage(newPage);
   };
-  console.log('paged items: ', pagedItems);
 
   return (
     <div>
@@ -191,7 +189,6 @@ export function BlogsList({ content, itemsPerPage = 5 }: BlogsListProps) {
     console.log('setting page to ', newPage);
     setPage(newPage);
   };
-  console.log('paged items: ', pagedItems);
 
   return (
     <div>

@@ -43,8 +43,8 @@ export default function PublicationIndex() {
   }
 
   return (
-    <div className="mx-auto w-full p-6">
-      <div className="p-8">
+    <div className="mx-auto w-full md:p-6">
+      <div className="md:p-8">
         <div className="mb-6">
           <div className="mb-4 flex items-center gap-3">
             <Badge
@@ -65,7 +65,7 @@ export default function PublicationIndex() {
             {publication.date}
           </span>
           {publication.paperLink && (
-            <Button className="rounded-full bg-foreground px-8 py-4 text-lg text-background transition-all duration-300 hover:scale-110 hover:border hover:border-foreground hover:bg-background hover:text-foreground">
+            <Button className="rounded-full bg-foreground py-4 text-lg text-background transition-all duration-300 hover:scale-110 hover:border hover:border-foreground hover:bg-background hover:text-foreground md:px-8">
               <Link
                 to={publication.paperLink}
                 className="flex items-center hover:no-underline"

@@ -8,6 +8,7 @@ import { cn } from '@/lib/utils';
 
 type UnderlineLinkProps = UnderlineTextProps & {
   href?: string;
+  onClickAction?: () => void;
 };
 
 export function UnderlineLink({
