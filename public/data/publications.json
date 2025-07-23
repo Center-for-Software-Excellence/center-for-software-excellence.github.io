@@ -130,7 +130,7 @@
   {
     "title": "A Framework and Taxonomy for Characterizing the Applicability of Software Architecture Recovery Approaches: A Tertiary‐Mapping Study",
     "abstract": "Software architecture assists developers in addressing non-functional requirements and in maintaining, debugging, and upgrading their software systems. Consequently, consistency between the designed architecture and the implemented software system itself is important; without this consistency the non-functional requirements targeted may not be addressed and architectural documentation may mis-direct maintenance efforts that target the associated code-base.",
-    "date": "2025-07-17",
+    "date": "2024-07-17",
     "authors": [
       "Abdul Qayum",
       "Mengqi Zhang",

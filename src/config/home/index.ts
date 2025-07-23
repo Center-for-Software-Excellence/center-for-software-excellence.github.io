@@ -24,6 +24,7 @@ type People = {
 
 export interface Collaborator {
   org: string;
+  logo?: string;
   people: People[];
 }
 
@@ -51,6 +52,7 @@ export const getHomeConfig = (): HomeConfig => ({
   collaborators: [
     {
       org: 'University of British Columbia',
+      logo: '/logos/ubc.png',
       people: [
         {
           name: 'Julia Rubin',
@@ -74,6 +76,7 @@ export const getHomeConfig = (): HomeConfig => ({
     },
     {
       org: 'University of Manitoba',
+      logo: '/logos/manitoba.png',
       people: [
         {
           name: 'Shaowei Wang',
@@ -82,6 +85,7 @@ export const getHomeConfig = (): HomeConfig => ({
     },
     {
       org: 'University of Waterloo',
+      logo: '/logos/waterloo.jpg',
       people: [
         {
           name: 'Weiyi Shang',
@@ -90,6 +94,7 @@ export const getHomeConfig = (): HomeConfig => ({
     },
     {
       org: 'University of Ottawa',
+      logo: '/logos/ottawa.png',
       people: [
         {
           name: 'Lionel Briand',
@@ -98,6 +103,7 @@ export const getHomeConfig = (): HomeConfig => ({
     },
     {
       org: 'University of New Brunswick',
+      logo: '/logos/brunswick.png',
       people: [
         {
           name: 'Rongxing Lu',
@@ -105,7 +111,8 @@ export const getHomeConfig = (): HomeConfig => ({
       ],
     },
     {
-      org: 'Queen’s University',
+      org: "Queen's University",
+      logo: '/logos/queens.svg',
       people: [
         { name: 'Ying Zou' },
         {
@@ -118,6 +125,7 @@ export const getHomeConfig = (): HomeConfig => ({
     },
     {
       org: 'Concordia University',
+      logo: '/logos/concordia.svg',
       people: [
         {
           name: 'Jinqiu Yang',
@@ -129,6 +137,7 @@ export const getHomeConfig = (): HomeConfig => ({
     },
     {
       org: 'Polytechnique Montreal',
+      logo: '/logos/polytechnique.png',
       people: [
         {
           name: 'Foutse Khomh',
@@ -137,6 +146,7 @@ export const getHomeConfig = (): HomeConfig => ({
     },
     {
       org: 'York University',
+      logo: '/logos/york.png',
       people: [
         {
           name: 'Jack Jiang',
@@ -151,6 +161,7 @@ export const getHomeConfig = (): HomeConfig => ({
     },
     {
       org: 'University of Toronto',
+      logo: '/logos/toronto.png',
       people: [
         {
           name: 'Shurui Zhou',

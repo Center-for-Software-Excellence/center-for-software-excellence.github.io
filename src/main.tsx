@@ -26,4 +26,7 @@ createRoot(document.getElementById('root')!).render(
     </ThemeProvider>
   </StrictMode>,
 );
-// router.navigate(window.location.href.split('?currentRoute=')[1]);
+const currentRoute = window.location.href.split('?currentRoute=')[1];
+if (currentRoute) {
+  router.navigate(currentRoute);
+}

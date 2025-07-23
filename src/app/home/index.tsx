@@ -1,4 +1,4 @@
-import { Suspense } from 'react';
+import { Suspense, useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { ArrowRight, MoreHorizontal } from 'lucide-react';
@@ -11,7 +11,7 @@ import { UnderlineLink } from '@/components/common/underline-link';
 import { BlogCard } from '@/components/home/blog-card';
 import { CollaboratorCard } from '@/components/home/collaborator-card';
 import { ResearchCard } from '@/components/home/research-card';
-import { Collaborator, getHomeConfig } from '@/config/home';
+import { getHomeConfig } from '@/config/home';
 import { useBlogPosts } from '@/hooks/use-blog-posts';
 import { usePublications } from '@/hooks/use-publications';
 import { cn } from '@/lib/utils';
@@ -116,34 +116,96 @@ function LatestBlogsSection({ blogsSection }: { blogsSection: BlogsSection }) {
     </section>
   );
 }
-
 function CollaboratorsSection({
   collaborators,
   collaboratorsTitle,
 }: {
-  collaborators: Collaborator[];
+  collaborators: any[];
   collaboratorsTitle: string;
 }) {
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const [isPaused, setIsPaused] = useState(false);
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const items = [...collaborators, ...collaborators];
+
+  useEffect(() => {
+    const scrollContainer = scrollRef.current;
+    if (!scrollContainer) return;
+
+    let animationId: number;
+    let lastTime = 0;
+
+    const animate = (currentTime: number) => {
+      if (!lastTime) lastTime = currentTime;
+      const deltaTime = currentTime - lastTime;
+
+      if (!isPaused) {
+        setScrollPosition((prev) => {
+          const newPosition = prev + 0.07 * deltaTime;
+          const maxScroll = scrollContainer.scrollWidth / 2;
+
+          if (newPosition >= maxScroll) {
+            return newPosition - maxScroll;
+          }
+          return newPosition;
+        });
+      }
+
+      lastTime = currentTime;
+      animationId = requestAnimationFrame(animate);
+    };
+
+    animationId = requestAnimationFrame(animate);
+
+    return () => {
+      if (animationId) {
+        cancelAnimationFrame(animationId);
+      }
+    };
+  }, [isPaused]);
+
+  useEffect(() => {
+    const scrollContainer = scrollRef.current;
+    if (!scrollContainer) return;
+
+    scrollContainer.scrollLeft = scrollPosition;
+  }, [scrollPosition]);
+
   return (
-    <section className="mb-12 w-full overflow-hidden">
-      <div className="mx-auto mt-16 flex max-w-6xl flex-col justify-center text-start">
-        <div className="mx-auto mt-8 grid max-w-6xl grid-cols-2 items-start justify-between gap-4 px-8 text-foreground md:grid-cols-3 md:px-8 lg:grid-cols-4">
-          <h6 className="relateive w-full rounded-lg bg-foreground pt-4 text-base font-bold text-background md:p-4 dark:bg-active">
-            <span className="text-zinc-400 dark:text-background">Our </span>
-            {collaboratorsTitle}
-          </h6>
-          {collaborators
-            .sort((a, b) => a.people.length - b.people.length)
-            .map((collab, idx) => (
-              <CollaboratorCard key={idx} collaborator={collab} />
+    <section className="w-full py-20">
+      <div className="mx-auto mb-12 max-w-6xl px-8">
+        <h6 className="relateive w-full rounded-lg pt-4 text-xl font-bold md:p-4 md:text-2xl">
+          <span className="text-zinc-400 dark:text-active">Our </span>
+          {collaboratorsTitle}
+        </h6>
+      </div>
+
+      <div className="relative">
+        <div
+          ref={scrollRef}
+          className="scrollbar-hide overflow-x-hidden overflow-y-hidden"
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+          style={{
+            scrollbarWidth: 'none',
+            msOverflowStyle: 'none',
+            WebkitOverflowScrolling: 'touch',
+          }}
+        >
+          <div className="flex w-max gap-6 px-8 py-8">
+            {items.map((collaborator, index) => (
+              <CollaboratorCard
+                key={`collaborator-${index}`}
+                collaborator={collaborator}
+              />
             ))}
+          </div>
         </div>
       </div>
     </section>
   );
 }
-
-// Enhanced CollaboratorCard with elegant styling
 
 export default function Page() {
   const { collaborators, researchSection, blogsSection, collaboratorsTitle } =
