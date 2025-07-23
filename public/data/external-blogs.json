@@ -4,6 +4,6 @@
     "abstract": "Problem: AI coding assistant leaderboards (e.g., SWE-bench) focus solely on \"resolve rate,\" ignoring the crucial factor of efficiency in a resource-constrained world. Our Solution: We introduce SWE-Effi, a new leaderboard that re-evaluates agents based on a holistic efficiency score. We define efficiency as the balance between resolve rate (the outcome) and the resources consumed (token cost and execution time). We re-ranked popular agent scaffolds on a subset of SWE-bench benchmark using this new, multi-dimensional metric.",
     "date": "2025-07-18",
     "category": "AI/ML",
-    "link": "https://center-for-software-excellence.github.io/SWE-Effi/about/introducing-SWE-effi"
+    "link": "https://centre-for-software-excellence.github.io/SWE-Effi/about/introducing-SWE-effi"
   }
 ]
